@@ -1,0 +1,481 @@
+.SimpleCarrousel {
+  inline-size: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+}
+
+/**********************************Slider***********************************/
+.SimpleCarrousel .SliderContainer {
+  inline-size: 360px;
+  block-size: 400px;
+
+  display: flex;
+}
+
+.SimpleCarrousel .SliderContainer .Slider {
+  inline-size: 100%;
+  block-size: 100%;
+
+  display: flex;
+
+  position: relative;
+
+  align-items: start;
+  justify-content: center;
+
+  overflow: hidden;
+}
+
+.SimpleCarrousel .SliderContainer .Slider .TransitionMarker {
+  inline-size: 100%;
+  block-size: 100%;
+  position: absolute;
+
+  display: flex;
+
+  align-items: start;
+  justify-content: center;
+}
+/****************************Content************************/
+.SimpleCarrousel .SliderContainer .Slider .Content {
+  inline-size: 100%;
+  block-size: 100%;
+  margin-block-start: 0px;
+
+  position: absolute;
+  top: 0px;
+
+  background-image: url("/arms.webp");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 115%;
+}
+
+.SimpleCarrousel .SliderContainer .Slider .Two .Content {
+  background-size: 100%;
+  background-position: center 10px;
+}
+
+.SimpleCarrousel .SliderContainer .Slider .TransitionMarker.entered .Content {
+  animation: fadeIn 1000ms ease-in-out;
+  animation-delay: 0ms;
+  animation-fill-mode: both;
+}
+
+.SimpleCarrousel .SliderContainer .Slider .TransitionMarker.exited .Content {
+  animation: fadeOut 1000ms ease-in-out;
+  animation-delay: 0ms;
+  animation-fill-mode: both;
+}
+
+.Card {
+  inline-size: 200px;
+  block-size: auto;
+
+  padding: 12px;
+
+  position: absolute;
+
+  background-color: white;
+  border-radius: 8px;
+}
+
+.Card.Fisrt {
+  position: absolute;
+
+  bottom: 20px;
+  right: 8px;
+}
+
+.SimpleCarrousel
+  .SliderContainer
+  .Slider
+  .TransitionMarker.entered
+  .Card.Fisrt {
+  animation: slideRightInSmall 900ms ease-in-out;
+  animation-delay: 200ms;
+  animation-fill-mode: both;
+}
+
+.SimpleCarrousel .SliderContainer .Slider .TransitionMarker.exited .Card.Fisrt {
+  animation: slideRightOutSmall 1000ms ease-in-out;
+  animation-delay: 100ms;
+  animation-fill-mode: both;
+}
+
+.Card.Second {
+  position: absolute;
+
+  bottom: 120px;
+  left: 20px;
+}
+
+.SimpleCarrousel
+  .SliderContainer
+  .Slider
+  .TransitionMarker.entered
+  .Card.Second {
+  animation: slideLeftInSmall 800ms ease-in-out;
+  animation-delay: 400ms;
+  animation-fill-mode: both;
+}
+
+.SimpleCarrousel
+  .SliderContainer
+  .Slider
+  .TransitionMarker.exited
+  .Card.Second {
+  animation: slideLeftOutSmall 1000ms ease-in-out;
+  animation-delay: 100ms;
+  animation-fill-mode: both;
+}
+
+.Card.Thirst {
+  position: absolute;
+
+  bottom: 180px;
+  right: 20px;
+}
+
+.SimpleCarrousel
+  .SliderContainer
+  .Slider
+  .TransitionMarker.entered
+  .Card.Thirst {
+  animation: slideRightInSmall 900ms ease-in-out;
+  animation-delay: 500ms;
+  animation-fill-mode: both;
+}
+
+.SimpleCarrousel
+  .SliderContainer
+  .Slider
+  .TransitionMarker.exited
+  .Card.Thirst {
+  animation: slideRightOutSmall 1000ms ease-in-out;
+  animation-delay: 600ms;
+  animation-fill-mode: both;
+}
+.Card .CardContainer {
+  inline-size: 100%;
+  block-size: 100%;
+
+  position: relative;
+}
+
+.Card .CardContainer .Circle {
+  inline-size: 40px;
+  block-size: 40px;
+  padding: 4px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgb(51, 52, 53);
+
+  position: absolute;
+  top: -32px;
+  left: -24px;
+  border-radius: 100%;
+}
+
+.Card .CardContainer .Circle .Icon {
+  inline-size: 90%;
+  block-size: 90%;
+
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.Card p {
+  font-size: 16px;
+  text-align: center;
+  font-weight: 800;
+
+  color: rgb(50, 51, 52);
+}
+/* 
+.SimpleCarrousel .SliderContainer .Slider .ImageDecorator {
+  background-size: 100%;
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+
+  position: absolute;
+  left: -100px;
+  bottom: 0px;
+}
+
+.SimpleCarrousel
+  .SliderContainer
+  .Slider
+  .TransitionMarker.entered
+  .ImageDecorator {
+  animation: slideLeftInSmall 800ms ease-in-out;
+  animation-delay: 400ms;
+  animation-fill-mode: both;
+}
+
+.SimpleCarrousel
+  .SliderContainer
+  .Slider
+  .TransitionMarker.exited
+  .ImageDecorator {
+  animation: slideLeftOutSmall 1000ms ease-in-out;
+  animation-delay: 100ms;
+  animation-fill-mode: both;
+}
+
+.SimpleCarrousel .SliderContainer .Slider .ImageDecoratorTwo {
+  inline-size: 400px;
+  block-size: 400px;
+
+  background-size: 100%;
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+
+.SimpleCarrousel
+  .SliderContainer
+  .Slider
+  .TransitionMarker.entered
+  .ImageDecoratorTwo {
+  animation: slideRightInSmall 900ms ease-in-out;
+  animation-delay: 200ms;
+  animation-fill-mode: both;
+}
+
+.SimpleCarrousel
+  .SliderContainer
+  .Slider
+  .TransitionMarker.exited
+  .ImageDecoratorTwo {
+  animation: slideRightOutSmall 1000ms ease-in-out;
+  animation-delay: 100ms;
+  animation-fill-mode: both;
+}
+
+.SimpleCarrousel .SliderContainer .TransitionMarker.Two .ImageDecorator {
+  inline-size: 600px;
+  block-size: 400px;
+
+  background-size: 80%;
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+
+  position: absolute;
+  left: -150px;
+  bottom: 80px;
+}
+
+.SimpleCarrousel
+  .SliderContainer
+  .Slider
+  .TransitionMarker.Two
+  .ImageDecoratorTwo {
+  inline-size: 400px;
+  block-size: 400px;
+
+  background-size: 90%;
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+
+  position: absolute;
+  right: -0px;
+  bottom: -100px;
+}
+
+.SimpleCarrousel .SliderContainer .TransitionMarker.Three .ImageDecorator {
+  inline-size: 500px;
+  block-size: 320px;
+
+  background-size: contain;
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+
+  position: absolute;
+  left: -40px;
+  bottom: 0px;
+}
+
+.SimpleCarrousel
+  .SliderContainer
+  .Slider
+  .TransitionMarker.Three
+  .ImageDecoratorTwo {
+  inline-size: 500px;
+  block-size: 500px;
+
+  background-size: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: absolute;
+  right: -20px;
+  bottom: -40px;
+
+  filter: grayscale(40%);
+} */
+/*****************************Animations******************************/
+@keyframes fadeIn {
+  from {
+    filter: blur(100px);
+    opacity: 0;
+  }
+  to {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  from {
+    filter: blur(0px);
+    opacity: 1;
+  }
+  to {
+    filter: blur(100px);
+    opacity: 0;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(500px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInSmall {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-500px);
+    opacity: 0;
+  }
+}
+
+@keyframes slideOutSmall {
+  from {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+}
+
+@keyframes slideLeftIn {
+  from {
+    transform: translateX(500px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideLeftInSmall {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideLeftOut {
+  from {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-500px);
+    opacity: 0;
+  }
+}
+
+@keyframes slideLeftOutSmall {
+  from {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+}
+
+@keyframes slideRightIn {
+  from {
+    transform: translateX(-500px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideRightInSmall {
+  from {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideRightOut {
+  from {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(500px);
+    opacity: 0;
+  }
+}
+
+@keyframes slideRightOutSmall {
+  from {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+}

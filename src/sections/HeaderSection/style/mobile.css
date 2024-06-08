@@ -1,0 +1,26 @@
+.HeaderSection {
+  inline-size: 100%;
+  block-size: 80px;
+
+  padding-inline: 12px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: var(--primary-color);
+  background-color: transparent;
+  position: fixed;
+  z-index: 10000;
+}
+
+.HeaderSection .Logo {
+  inline-size: 60px;
+  block-size: 60px;
+  background-color: white;
+
+  mask-image: url("/Recurso_53.svg");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: 100%;
+}
