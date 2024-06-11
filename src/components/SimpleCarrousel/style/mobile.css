@@ -48,12 +48,11 @@
   margin-block-start: 0px;
 
   position: absolute;
-  top: 0px;
 
   background-image: url("/arms.webp");
   background-repeat: no-repeat;
   background-position: center bottom;
-  background-size: 115%;
+  background-size: 145%;
 }
 
 .SimpleCarrousel .SliderContainer .Slider .Two .Content {

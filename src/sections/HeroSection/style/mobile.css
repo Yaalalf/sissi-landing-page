@@ -1,42 +1,56 @@
 .HeroSection {
   inline-size: 100%;
-  block-size: 720px;
+  block-size: 780px;
 
   display: flex;
   flex-direction: column;
 
   align-items: center;
 
-  padding-block-start: 100px;
+  padding-block-start: 140px;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.HeroSection .Background {
+  inline-size: 100%;
+  block-size: 100%;
+
+  position: absolute;
+  top: 0px;
 
   background-image: url("/background.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
-  position: relative;
-  overflow: hidden;
+  z-index: -1;
+
+  filter: brightness(160%) contrast(100%) grayscale(10%);
 }
 
-.Decoration {
-  inline-size: 100%;
-  block-size: 400px;
-
-  position: absolute;
-  bottom: 0px;
-
-  background-image: url("/arms.webp");
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  background-size: contain;
-}
-
-.TitleContainer {
-  inline-size: 80%;
+.HeroSection .TitleContainer {
+  inline-size: 350px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
+.HeroSection .TitleContainer .TextLogo {
+  inline-size: 100%;
+  block-size: 90px;
+
+  margin-block-end: 16px;
+
+  background-color: var(--primary-color-dark);
+
+  mask-image: url("/icons/marca-texto.svg");
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+
 .TitleContainer h1 {
   margin-block-end: 4px;
   font-size: 32px;
@@ -52,15 +66,17 @@
   text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.155);
 }
 
-.TitleContainer h2 {
-  text-align: center;
+.HeroSection .TitleContainer h2 {
+  inline-size: 80%;
   margin-block-end: 12px;
   font-size: 20px;
   line-height: 24px;
   font-weight: 500;
-  color: rgb(53, 62, 62);
+  text-align: center;
+
+  color: rgb(59, 71, 71);
 }
-.TitleContainer a {
+.HeroSection .TitleContainer a {
   padding-inline: 20px;
   padding-block: 12px;
 

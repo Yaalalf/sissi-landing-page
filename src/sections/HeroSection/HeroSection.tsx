@@ -4,8 +4,10 @@ import "./style/mobile.css";
 export default function HeroSection() {
   return (
     <section className="HeroSection">
+      <div className="Background"></div>
       <div className="TitleContainer">
-        <h1>Cuidado de Lujo para Tu Piel</h1>
+        <span className="TextLogo"></span>
+        {/* <h1>Cuidado de Lujo para Tu Piel</h1> */}
         <h2>
           Tratamientos de alta gama realza tu belleza natural y sientete
           espectacular.

@@ -169,7 +169,7 @@ const data = [
     icon1: "/bote_icon.png",
     icon2: "/puntos_icon.png",
     icon3: "/tenedor_icon.png",
-    backgroundUrl: "/arms.webp",
+    backgroundUrl: "/relleno.webp",
   },
   {
     className: "Two",

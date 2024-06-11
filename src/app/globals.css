@@ -1,12 +1,10 @@
-
-:root{
---primary-color: #00B7CD
+:root {
+  --primary-color: #00b7cd;
+  --primary-color-dark: #03464f;
 }
-
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
-
