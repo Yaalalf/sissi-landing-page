@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import "./style/desktop.css";
+import "./style/mobile.css";
 
 export default function SimpleCarrousel() {
   const [selected, setSelected] = useState(0);
@@ -175,6 +175,8 @@ const data = [
     className: "Two",
     description1: "Apariencia Rejuvenecida",
     description2: "Reducción de Arrugas y Líneas Finas",
+    icon1: "/mascara_icon.png",
+    icon2: "/hilo_icon.png",
     backgroundUrl: "/rostro.webp",
   },
 ];

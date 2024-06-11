@@ -57,8 +57,8 @@
 }
 
 .SimpleCarrousel .SliderContainer .Slider .Two .Content {
-  background-size: 100%;
-  background-position: center 10px;
+  background-size: 115%;
+  background-position: center bottom;
 }
 
 .SimpleCarrousel .SliderContainer .Slider .TransitionMarker.entered .Content {
@@ -74,7 +74,7 @@
 }
 
 .Card {
-  inline-size: 200px;
+  inline-size: auto;
   block-size: auto;
 
   padding: 12px;
@@ -111,7 +111,7 @@
 .Card.Second {
   position: absolute;
 
-  bottom: 120px;
+  bottom: 100px;
   left: 20px;
 }
 
@@ -138,7 +138,7 @@
 .Card.Thirst {
   position: absolute;
 
-  bottom: 180px;
+  bottom: 160px;
   right: 20px;
 }
 
@@ -180,7 +180,7 @@
   background-color: rgb(51, 52, 53);
 
   position: absolute;
-  top: -32px;
+  top: -40px;
   left: -24px;
   border-radius: 100%;
 }
@@ -201,131 +201,7 @@
 
   color: rgb(50, 51, 52);
 }
-/* 
-.SimpleCarrousel .SliderContainer .Slider .ImageDecorator {
-  background-size: 100%;
-  background-position: 0px 0px;
-  background-repeat: no-repeat;
 
-  position: absolute;
-  left: -100px;
-  bottom: 0px;
-}
-
-.SimpleCarrousel
-  .SliderContainer
-  .Slider
-  .TransitionMarker.entered
-  .ImageDecorator {
-  animation: slideLeftInSmall 800ms ease-in-out;
-  animation-delay: 400ms;
-  animation-fill-mode: both;
-}
-
-.SimpleCarrousel
-  .SliderContainer
-  .Slider
-  .TransitionMarker.exited
-  .ImageDecorator {
-  animation: slideLeftOutSmall 1000ms ease-in-out;
-  animation-delay: 100ms;
-  animation-fill-mode: both;
-}
-
-.SimpleCarrousel .SliderContainer .Slider .ImageDecoratorTwo {
-  inline-size: 400px;
-  block-size: 400px;
-
-  background-size: 100%;
-  background-position: 0px 0px;
-  background-repeat: no-repeat;
-
-  position: absolute;
-  right: 0px;
-  bottom: 0px;
-}
-
-.SimpleCarrousel
-  .SliderContainer
-  .Slider
-  .TransitionMarker.entered
-  .ImageDecoratorTwo {
-  animation: slideRightInSmall 900ms ease-in-out;
-  animation-delay: 200ms;
-  animation-fill-mode: both;
-}
-
-.SimpleCarrousel
-  .SliderContainer
-  .Slider
-  .TransitionMarker.exited
-  .ImageDecoratorTwo {
-  animation: slideRightOutSmall 1000ms ease-in-out;
-  animation-delay: 100ms;
-  animation-fill-mode: both;
-}
-
-.SimpleCarrousel .SliderContainer .TransitionMarker.Two .ImageDecorator {
-  inline-size: 600px;
-  block-size: 400px;
-
-  background-size: 80%;
-  background-position: 0px 0px;
-  background-repeat: no-repeat;
-
-  position: absolute;
-  left: -150px;
-  bottom: 80px;
-}
-
-.SimpleCarrousel
-  .SliderContainer
-  .Slider
-  .TransitionMarker.Two
-  .ImageDecoratorTwo {
-  inline-size: 400px;
-  block-size: 400px;
-
-  background-size: 90%;
-  background-position: 0px 0px;
-  background-repeat: no-repeat;
-
-  position: absolute;
-  right: -0px;
-  bottom: -100px;
-}
-
-.SimpleCarrousel .SliderContainer .TransitionMarker.Three .ImageDecorator {
-  inline-size: 500px;
-  block-size: 320px;
-
-  background-size: contain;
-  background-position: 0px 0px;
-  background-repeat: no-repeat;
-
-  position: absolute;
-  left: -40px;
-  bottom: 0px;
-}
-
-.SimpleCarrousel
-  .SliderContainer
-  .Slider
-  .TransitionMarker.Three
-  .ImageDecoratorTwo {
-  inline-size: 500px;
-  block-size: 500px;
-
-  background-size: 80%;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  position: absolute;
-  right: -20px;
-  bottom: -40px;
-
-  filter: grayscale(40%);
-} */
 /*****************************Animations******************************/
 @keyframes fadeIn {
   from {
