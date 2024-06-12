@@ -165,10 +165,8 @@ const data = [
     className: "One",
     description1: "Mejora de la Textura y Tono de la Piel",
     description2: "Reducción de la Celulitis",
-    description3: "Aumento de la Elasticidad y Firmeza",
     icon1: "/bote_icon.png",
     icon2: "/puntos_icon.png",
-    icon3: "/tenedor_icon.png",
     backgroundUrl: "/relleno.webp",
   },
   {
@@ -178,5 +176,13 @@ const data = [
     icon1: "/mascara_icon.png",
     icon2: "/hilo_icon.png",
     backgroundUrl: "/rostro.webp",
+  },
+  {
+    className: "Three",
+    description1: "Apariencia Rejuvenecida",
+    description2: "Reducción de Arrugas y Líneas Finas",
+    icon1: "/tenedor_icon.png",
+    icon2: "/hilo_icon.png",
+    backgroundUrl: "/botox_lips.webp",
   },
 ];

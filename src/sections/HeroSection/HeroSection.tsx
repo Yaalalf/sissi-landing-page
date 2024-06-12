@@ -9,10 +9,13 @@ export default function HeroSection() {
         <span className="TextLogo"></span>
         {/* <h1>Cuidado de Lujo para Tu Piel</h1> */}
         <h2>
-          Tratamientos de alta gama realza tu belleza natural y sientete
-          espectacular.
+          Tratamientos de <span>alta gama</span> realza tu{" "}
+          <span>belleza natural</span> y sientete espectacular.
         </h2>
-        <a href="/#">Agenda una Cita</a>
+        <a href="/#">
+          Agenda una Cita <div className="Decorator"></div>
+          <div className="Decorator"></div>
+        </a>
       </div>
 
       <SimpleCarrousel />

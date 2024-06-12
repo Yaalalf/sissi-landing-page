@@ -20,7 +20,7 @@
   position: absolute;
   top: 0px;
 
-  background-image: url("/background.jpg");
+  background-image: url("/background.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -68,17 +68,24 @@
 
 .HeroSection .TitleContainer h2 {
   inline-size: 80%;
-  margin-block-end: 12px;
+  margin-block-end: 20px;
   font-size: 20px;
   line-height: 24px;
   font-weight: 500;
   text-align: center;
 
-  color: rgb(59, 71, 71);
+  color: rgb(80, 92, 92);
+}
+
+.HeroSection .TitleContainer h2 span {
+  color: var(--secondary-color-dark);
+  font-weight: 600;
 }
 .HeroSection .TitleContainer a {
   padding-inline: 20px;
   padding-block: 12px;
+
+  position: relative;
 
   border: 3px solid rgb(44, 92, 112);
 
@@ -88,4 +95,41 @@
   color: #1c5b7f;
   text-decoration: none;
   text-align: center;
+}
+
+.HeroSection .TitleContainer a .Decorator {
+  inline-size: 50px;
+  block-size: 90px;
+
+  position: absolute;
+  bottom: -38px;
+  right: 0px;
+
+  background-color: #1c5b7f;
+
+  mask-image: url("/jeringa_decorator.webp");
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-position: center;
+
+  transform: rotateZ(70deg);
+}
+
+.HeroSection .TitleContainer a .Decorator:nth-of-type(2) {
+  inline-size: 40px;
+  block-size: 40px;
+
+  position: absolute;
+  bottom: -0px;
+  right: -40px;
+  /* left: -28px; */
+
+  background-color: #1c5b7f;
+
+  mask-image: url("/lip_decorator.webp");
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-position: center;
+
+  transform: rotateZ(45deg);
 }
