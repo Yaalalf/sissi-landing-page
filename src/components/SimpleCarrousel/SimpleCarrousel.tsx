@@ -89,21 +89,6 @@ export default function SimpleCarrousel() {
                 </div>
               </div>
             )}
-            {previousSlider.description3 && (
-              <div className="Card Thirst">
-                <div className="CardContainer">
-                  <div className="Circle">
-                    <div
-                      className="Icon"
-                      style={{
-                        backgroundImage: `url(${previousSlider.icon3})`,
-                      }}
-                    ></div>
-                  </div>
-                  <p> {previousSlider.description3}</p>
-                </div>
-              </div>
-            )}
           </div>
 
           <div
@@ -137,19 +122,6 @@ export default function SimpleCarrousel() {
                     ></div>
                   </div>
                   <p> {currentSlider.description2}</p>
-                </div>
-              </div>
-            )}
-            {currentSlider.description3 && (
-              <div className="Card Thirst">
-                <div className="CardContainer">
-                  <div className="Circle">
-                    <div
-                      className="Icon"
-                      style={{ backgroundImage: `url(${currentSlider.icon3})` }}
-                    ></div>
-                  </div>
-                  <p> {currentSlider.description3}</p>
                 </div>
               </div>
             )}
