@@ -31,7 +31,7 @@
 }
 
 .IndividualSection .TitleContainer {
-  inline-size: 100%;
+  inline-size: 320px;
 
   margin-block-end: 20px;
 }
@@ -116,7 +116,7 @@
   mask-image: url("/aplicacion.png");
 }
 .IndividualSection .Process li:nth-of-type(3) .Icon {
-  mask-image: url("/rostro_listo_v1.png");
+  mask-image: url("/rostro_listo.png");
 }
 .IndividualSection .Process li .Text {
   display: flex;
@@ -177,13 +177,13 @@
   background-color: var(--primary-color-dark);
 
   background-image: none;
-  mask-image: url("/trival_first.png");
+  mask-image: url("/trival_first.svg");
   mask-position: center bottom;
-  mask-size: contain;
+  mask-size: 140%;
   mask-repeat: no-repeat;
 
   position: absolute;
-  bottom: -20px;
+  bottom: -36px;
 }
 .Decoration_Icon {
   inline-size: 160px;
