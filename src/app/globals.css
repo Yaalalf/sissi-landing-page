@@ -10,3 +10,9 @@
   padding: 0;
   margin: 0;
 }
+
+@font-face {
+  font-family: DIN;
+  src: url(/fonts/DIN_Medium.otf);
+  weight: 500;
+}
