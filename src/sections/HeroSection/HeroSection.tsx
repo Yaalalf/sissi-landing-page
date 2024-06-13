@@ -9,8 +9,8 @@ export default function HeroSection() {
         <span className="TextLogo"></span>
         {/* <h1>Cuidado de Lujo para Tu Piel</h1> */}
         <h2>
-          Tratamientos de <span>alta gama</span> realza tu{" "}
-          <span>belleza natural</span> y sientete espectacular.
+          Tratamientos de <span>estética facial</span> y{" "}
+          <span>estética corporal</span> no invasivos.
         </h2>
         <a href="/#">
           Agenda una Cita <div className="Decorator"></div>
