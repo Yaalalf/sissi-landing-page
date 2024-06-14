@@ -1,0 +1,7 @@
+.VisibilityObserver {
+  inline-size: 100%;
+  block-size: 10px;
+
+  position: absolute;
+  top: 80px;
+}

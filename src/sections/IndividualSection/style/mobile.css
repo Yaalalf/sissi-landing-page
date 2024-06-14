@@ -39,7 +39,6 @@
 .IndividualSection .TitleContainer h3 {
   margin-block-end: 4px;
   font-size: 26px;
-
   color: var(--primary-color-dark);
 }
 
@@ -172,18 +171,18 @@
   .DecorationContainer
   .Decoration:nth-of-type(2) {
   inline-size: 100%;
-  block-size: 100%;
+  block-size: 20px;
 
   background-color: var(--primary-color-dark);
 
   background-image: none;
   mask-image: url("/trival_first.svg");
   mask-position: center bottom;
-  mask-size: 140%;
-  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-repeat: repeat-x;
 
   position: absolute;
-  bottom: -36px;
+  bottom: -10px;
 }
 .Decoration_Icon {
   inline-size: 160px;

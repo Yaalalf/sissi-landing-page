@@ -1,11 +1,28 @@
+"use client";
+
+import VisibilityObserver from "@/components/VisibilityObserver/VisibilityObserver";
 import "./style/mobile.css";
+import { useState } from "react";
 
 export default function HeaderSection() {
-  return (
-    <header className="HeaderSection">
-      <div className="Logo"></div>
+  const [isHero, setIsHero] = useState(true);
 
-      <button className="Menu"></button>
-    </header>
+  return (
+    <>
+      <header className={`HeaderSection ${isHero ? "" : "IsNotHero"}`}>
+        <div className="LogoContainer">
+          <div className="Logo"></div>
+          {!isHero && <div className="Text"></div>}
+        </div>
+
+        <button className="Menu"></button>
+      </header>
+
+      <VisibilityObserver
+        onVisibility={(entry) => {
+          setIsHero(entry.isIntersecting);
+        }}
+      />
+    </>
   );
 }

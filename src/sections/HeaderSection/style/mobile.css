@@ -2,8 +2,6 @@
   inline-size: 100%;
   block-size: 92px;
 
-  margin-block-start: 12px;
-
   padding-inline: 16px;
   padding-block: 4px;
 
@@ -11,15 +9,30 @@
   justify-content: space-between;
   align-items: center;
 
-  background-color: var(--primary-color);
   background-color: transparent;
   position: fixed;
+  top: 60px;
+
   z-index: 10000;
+
+  transition: all ease-in-out 300ms;
 }
 
-.HeaderSection.init {
-  position: sticky;
+.HeaderSection.IsNotHero {
+  inline-size: 100%;
+  block-size: 60px;
+
   top: 0px;
+
+  background-color: var(--primary-color-dark);
+
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.292);
+}
+
+.HeaderSection .LogoContainer {
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }
 
 .HeaderSection .Logo {
@@ -31,7 +44,27 @@
   mask-repeat: no-repeat;
   mask-position: center;
   mask-size: contain;
+  transition: all ease-in-out 300ms;
 }
+
+.HeaderSection.IsNotHero .Logo {
+  inline-size: 60px;
+  block-size: 50px;
+
+  background-color: var(--primary-color);
+}
+
+.HeaderSection .Text {
+  inline-size: 100px;
+  block-size: 60px;
+  background-color: var(--primary-color);
+
+  mask-image: url("/icons/marca-texto.svg");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+}
+
 .HeaderSection .Menu {
   inline-size: 32px;
   block-size: 32px;
@@ -41,3 +74,8 @@
   mask-size: contain;
   mask-repeat: no-repeat;
 }
+
+.HeaderSection.IsNotHero .Menu {
+  background-color: var(--primary-color);
+}
+/*****************************************************************************************/

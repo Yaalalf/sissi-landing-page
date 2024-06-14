@@ -19,6 +19,7 @@
 
   position: absolute;
   top: 0px;
+  left: 0px;
 
   background-image: url("/background.webp");
   background-repeat: no-repeat;
@@ -28,6 +29,41 @@
   z-index: -1;
 
   filter: brightness(160%) contrast(100%) grayscale(10%);
+}
+
+.HeroSection .Background::before {
+  inline-size: 100%;
+  block-size: 100%;
+
+  display: block;
+  content: "";
+  position: absolute;
+  left: -80%;
+
+  background-color: var(--primary-color-dark);
+
+  opacity: 0.2;
+
+  transform: rotateZ(45deg);
+
+  animation: climbTwo ease-in-out 8000ms infinite;
+}
+.HeroSection .Background::after {
+  inline-size: 100%;
+  block-size: 100%;
+
+  display: block;
+  content: "";
+  position: absolute;
+  left: 70%;
+
+  background-color: var(--primary-color-dark);
+
+  opacity: 0.1;
+
+  transform: rotateZ(45deg);
+
+  animation: climbOne ease-in-out 5000ms infinite;
 }
 
 .HeroSection .TitleContainer {
@@ -49,21 +85,11 @@
   mask-size: contain;
   mask-repeat: no-repeat;
   mask-position: center;
-}
 
-.TitleContainer h1 {
-  margin-block-end: 4px;
-  font-size: 32px;
-  line-height: 42px;
-  font-weight: 800;
-  color: var(--primary-color);
-  text-align: center;
-  background-color: #0093e9;
-  background-image: linear-gradient(160deg, #c3e3f5 0%, #e4e2fd 100%);
+  opacity: 0;
 
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.155);
+  animation: slideInSmall ease-in-out 1000ms forwards;
+  animation-delay: 200ms;
 }
 
 .HeroSection .TitleContainer h2 {
@@ -75,6 +101,11 @@
   text-align: center;
 
   color: rgb(80, 92, 92);
+
+  opacity: 0;
+
+  animation: slideInSmall ease-in-out 1000ms forwards;
+  animation-delay: 400ms;
 }
 
 .HeroSection .TitleContainer h2 span {
@@ -95,14 +126,29 @@
   color: #1c5b7f;
   text-decoration: none;
   text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+
+  opacity: 0;
+
+  animation: slideInSmall ease-in-out 1000ms forwards;
+  animation-delay: 600ms;
+}
+
+.HeroSection .TitleContainer a .DecoratorContainer {
+  position: absolute;
+  top: 0px;
+  right: -40px;
+
+  display: flex;
 }
 
 .HeroSection .TitleContainer a .Decorator {
   inline-size: 50px;
   block-size: 90px;
 
-  position: absolute;
-  bottom: -38px;
+  position: relative;
+  bottom: 0px;
   right: 0px;
 
   background-color: #1c5b7f;
@@ -119,9 +165,9 @@
   inline-size: 40px;
   block-size: 40px;
 
-  position: absolute;
-  bottom: -0px;
-  right: -40px;
+  position: relative;
+  bottom: -10px;
+  right: 0px;
   /* left: -28px; */
 
   background-color: #1c5b7f;
@@ -132,4 +178,28 @@
   mask-position: center;
 
   transform: rotateZ(45deg);
+}
+
+@keyframes climbOne {
+  0% {
+    translate: 100px;
+  }
+  50% {
+    translate: 0px;
+  }
+  100% {
+    translate: 100px;
+  }
+}
+
+@keyframes climbTwo {
+  0% {
+    translate: -50px;
+  }
+  50% {
+    translate: 0px;
+  }
+  100% {
+    translate: -50px;
+  }
 }

@@ -1,0 +1,5 @@
+@media (412px <= width <= 1024px) {
+  .SimpleCarrousel {
+    inline-size: 380px;
+  }
+}

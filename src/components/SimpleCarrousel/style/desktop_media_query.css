@@ -1,0 +1,232 @@
+@media (1024px <= width <= 1920px) {
+  .SimpleCarrousel {
+    inline-size: 500px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+  }
+
+  /**********************************Slider***********************************/
+  .SimpleCarrousel .SliderContainer {
+    inline-size: 100%;
+    block-size: 500px;
+
+    display: flex;
+  }
+
+  .SimpleCarrousel .SliderContainer .Slider {
+    inline-size: 100%;
+    block-size: 100%;
+
+    display: flex;
+
+    position: relative;
+
+    align-items: start;
+    justify-content: center;
+
+    /* overflow: hidden; */
+  }
+
+  .SimpleCarrousel .SliderContainer .Slider .TransitionMarker {
+    inline-size: 100%;
+    block-size: 100%;
+    position: absolute;
+
+    display: flex;
+
+    align-items: start;
+    justify-content: center;
+  }
+  /****************************Content************************/
+  .SimpleCarrousel .SliderContainer .Slider .Content {
+    inline-size: 100%;
+    block-size: 100%;
+    margin-block-start: 0px;
+
+    position: absolute;
+
+    background-image: url("/arms.webp");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+  }
+
+  .SimpleCarrousel .SliderContainer .Slider .Two .Content {
+    background-size: 80%;
+    background-position: center bottom;
+  }
+  .SimpleCarrousel .SliderContainer .Slider .Three .Content {
+    background-size: 80%;
+    background-position: center bottom;
+  }
+  .SimpleCarrousel .SliderContainer .Slider .TransitionMarker.entered .Content {
+    animation: fadeIn 1000ms ease-in-out;
+    animation-delay: 0ms;
+    animation-fill-mode: both;
+  }
+
+  .SimpleCarrousel .SliderContainer .Slider .TransitionMarker.exited .Content {
+    animation: fadeOut 1000ms ease-in-out;
+    animation-delay: 0ms;
+    animation-fill-mode: both;
+  }
+
+  .Card {
+    inline-size: auto;
+    block-size: auto;
+
+    padding: 12px;
+
+    position: absolute;
+
+    background-color: white;
+    border-radius: 8px;
+  }
+
+  .Card.Fisrt {
+    bottom: 32px;
+    left: 32px;
+  }
+
+  .Two .Card.Fisrt {
+    bottom: 32px;
+    left: 32px;
+  }
+
+  .Three .Card.Fisrt {
+    bottom: 32px;
+    right: 12px;
+    left: auto;
+  }
+
+  .SimpleCarrousel
+    .SliderContainer
+    .Slider
+    .TransitionMarker.entered
+    .Card.Fisrt {
+    animation: slideRightInSmall 900ms ease-in-out;
+    animation-delay: 200ms;
+    animation-fill-mode: both;
+  }
+
+  .SimpleCarrousel
+    .SliderContainer
+    .Slider
+    .TransitionMarker.exited
+    .Card.Fisrt {
+    animation: slideRightOutSmall 1000ms ease-in-out;
+    animation-delay: 100ms;
+    animation-fill-mode: both;
+  }
+
+  .Card.Second {
+    position: absolute;
+
+    bottom: 300px;
+    right: 20px;
+  }
+
+  .Two .Card.Second {
+    position: absolute;
+
+    bottom: 108px;
+    right: 40px;
+    left: auto;
+  }
+  .Three .Card.Second {
+    bottom: 280px;
+    right: auto;
+    left: 40px;
+  }
+  .SimpleCarrousel
+    .SliderContainer
+    .Slider
+    .TransitionMarker.entered
+    .Card.Second {
+    animation: slideLeftInSmall 800ms ease-in-out;
+    animation-delay: 400ms;
+    animation-fill-mode: both;
+  }
+
+  .SimpleCarrousel
+    .SliderContainer
+    .Slider
+    .TransitionMarker.exited
+    .Card.Second {
+    animation: slideLeftOutSmall 1000ms ease-in-out;
+    animation-delay: 100ms;
+    animation-fill-mode: both;
+  }
+
+  .Card.Thirst {
+    position: absolute;
+
+    bottom: 160px;
+    right: 20px;
+  }
+
+  .SimpleCarrousel
+    .SliderContainer
+    .Slider
+    .TransitionMarker.entered
+    .Card.Thirst {
+    animation: slideRightInSmall 900ms ease-in-out;
+    animation-delay: 500ms;
+    animation-fill-mode: both;
+  }
+
+  .SimpleCarrousel
+    .SliderContainer
+    .Slider
+    .TransitionMarker.exited
+    .Card.Thirst {
+    animation: slideRightOutSmall 1000ms ease-in-out;
+    animation-delay: 600ms;
+    animation-fill-mode: both;
+  }
+  .Card .CardContainer {
+    inline-size: 100%;
+    block-size: 100%;
+
+    position: relative;
+  }
+
+  .Card .CardContainer .Circle {
+    inline-size: 40px;
+    block-size: 40px;
+    padding: 4px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgb(51, 52, 53);
+
+    position: absolute;
+    top: -40px;
+    left: -24px;
+    border-radius: 100%;
+  }
+
+  .Card .CardContainer .Circle .Icon {
+    inline-size: 90%;
+    block-size: 90%;
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  .Card p {
+    font-size: 16px;
+    text-align: center;
+    font-weight: 800;
+
+    color: rgb(50, 51, 52);
+  }
+}

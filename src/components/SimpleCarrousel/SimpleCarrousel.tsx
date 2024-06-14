@@ -2,6 +2,8 @@
 
 import { useEffect, useRef, useState } from "react";
 import "./style/mobile.css";
+import "./style/mobile_media_query.css";
+import "./style/desktop_media_query.css";
 
 export default function SimpleCarrousel() {
   const [selected, setSelected] = useState(0);
@@ -151,10 +153,10 @@ const data = [
   },
   {
     className: "Three",
-    description1: "Aumento de Labios",
-    description2: "Define el contorno de los labios",
-    icon1: "/tenedor_icon.png",
-    icon2: "/hilo_icon.png",
+    description2: "Aumento de Labios",
+    description1: "Define el contorno de los labios",
+    icon2: "/tenedor_icon.png",
+    icon1: "/hilo_icon.png",
     backgroundUrl: "/botox_lips.webp",
   },
 ];
