@@ -10,7 +10,15 @@ export default function ConsultingSection() {
           subtitle="Ayuda Facial y Nutricional"
         />
       </div>
-      <div className="Background"></div>
+      <div className="BackgroundAnimated">
+        <div className="AnimatedObject"></div>
+        <div className="AnimatedObject"></div>
+        <div className="AnimatedObject"></div>
+        <div className="AnimatedObject"></div>
+        <div className="AnimatedObject"></div>
+        <div className="AnimatedObject"></div>
+        <div className="AnimatedObject"></div>
+      </div>
       <div className="MicroSection">
         <h5>Diagnóstico facial y orientación dermocosmética</h5>
         <p>

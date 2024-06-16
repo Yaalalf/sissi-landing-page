@@ -12,7 +12,7 @@
   padding-block-end: 0px;
 }
 
-.ConsultingSection .Background {
+.ConsultingSection .BackgroundAnimated {
   inline-size: 100%;
   block-size: 240px;
 
@@ -20,10 +20,122 @@
   top: 0px;
 
   background-color: var(--primary-color-dark);
-  background-image: url("/consulting_background.png");
+  background-image: url("/consulting_background-foreground.png");
   background-repeat: no-repeat;
-  background-size: 110%;
+  background-size: cover;
   background-position: center;
+
+  overflow: hidden;
+}
+
+.ConsultingSection .BackgroundAnimated .AnimatedObject {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.491));
+}
+
+.ConsultingSection .BackgroundAnimated .AnimatedObject:nth-of-type(1) {
+  inline-size: 40%;
+  block-size: 40%;
+
+  position: absolute;
+  top: -10px;
+  left: -10px;
+
+  background-image: url("/plato-con-granos.png");
+
+  rotate: -35deg;
+
+  animation: movementOne ease-in-out 10s forwards infinite;
+}
+
+.ConsultingSection .BackgroundAnimated .AnimatedObject:nth-of-type(2) {
+  inline-size: 20%;
+  block-size: 20%;
+
+  position: absolute;
+  top: 0px;
+  right: 40px;
+
+  background-image: url("/tason-negro-naranja.png");
+
+  rotate: 35deg;
+
+  animation: movementOne ease-in-out 15s forwards infinite;
+}
+.ConsultingSection .BackgroundAnimated .AnimatedObject:nth-of-type(3) {
+  inline-size: 19%;
+  block-size: 19%;
+
+  position: absolute;
+  top: 50px;
+  right: -10px;
+
+  background-image: url("/tason-blanco-verde.png");
+
+  rotate: 90deg;
+
+  animation: movementOne ease-in-out 15s forwards infinite;
+}
+
+.ConsultingSection .BackgroundAnimated .AnimatedObject:nth-of-type(4) {
+  inline-size: 22%;
+  block-size: 22%;
+
+  position: absolute;
+  top: 120px;
+  left: -10px;
+
+  background-image: url("/tason-blanco-small-naranja.png");
+
+  rotate: 90deg;
+
+  animation: movementOne ease-in-out 15s forwards infinite;
+}
+
+.ConsultingSection .BackgroundAnimated .AnimatedObject:nth-of-type(5) {
+  inline-size: 19%;
+  block-size: 19%;
+
+  position: absolute;
+  bottom: 4px;
+  left: 60px;
+
+  background-image: url("/tason-blanco-small-red.png");
+
+  rotate: 35deg;
+
+  animation: movementOne ease-in-out 15s forwards infinite;
+}
+.ConsultingSection .BackgroundAnimated .AnimatedObject:nth-of-type(6) {
+  inline-size: 25%;
+  block-size: 25%;
+
+  position: absolute;
+  bottom: -20px;
+  right: 60px;
+
+  background-image: url("/tason-blanco-grande-naranja.png");
+
+  rotate: -35deg;
+
+  animation: movementOne ease-in-out 15s forwards infinite;
+}
+
+.ConsultingSection .BackgroundAnimated .AnimatedObject:nth-of-type(7) {
+  inline-size: 60%;
+  block-size: 60%;
+
+  position: absolute;
+  bottom: 20%;
+  right: 20%;
+
+  background-image: url("/frasco.png");
+
+  rotate: -15deg;
+
+  animation: movementOne ease-in-out 15s forwards infinite;
 }
 .ConsultingSection .Decoration_Icon {
   inline-size: 120px;
@@ -59,4 +171,20 @@
 .ConsultingSection .MicroSection p {
   font-size: 18px;
   color: #232327;
+}
+
+/******************************Animations*********************************/
+
+@keyframes movementOne {
+  0% {
+    transform: translateX(50px);
+  }
+
+  50% {
+    transform: translateX(-50px);
+  }
+
+  100% {
+    transform: translateX(50px);
+  }
 }
