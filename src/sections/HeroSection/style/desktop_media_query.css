@@ -1,123 +1,47 @@
 @media (1024px < width < 1920px) {
   .HeroSection {
-    inline-size: 100%;
     block-size: 500px;
 
     padding-block-start: 60px;
 
-    display: flex;
     flex-direction: row;
     align-items: flex-end;
     justify-content: center;
 
     gap: 20px;
-
-    position: relative;
-    overflow: hidden;
   }
 
   .HeroSection .Background::before {
-    inline-size: 100%;
-    block-size: 100%;
-
-    display: block;
-    content: "";
-    position: absolute;
     left: -80%;
 
-    background-color: var(--primary-color-dark);
-
     opacity: 0.4;
-
-    transform: rotateZ(45deg);
-
-    animation: climbTwo ease-in-out 8000ms infinite;
   }
   .HeroSection .Background::after {
-    inline-size: 100%;
-    block-size: 100%;
-
-    display: block;
-    content: "";
-    position: absolute;
-    left: 70%;
-
-    background-color: var(--primary-color-dark);
-
     opacity: 0.2;
-
-    transform: rotateZ(45deg);
-
-    animation: climbOne ease-in-out 5000ms infinite;
   }
 
   .HeroSection .TitleContainer {
     inline-size: 400px;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
     margin-block-end: 100px;
   }
 
   .HeroSection .TitleContainer .TextLogo {
-    inline-size: 100%;
     block-size: 140px;
-
-    margin-block-end: 16px;
   }
 
   .HeroSection .TitleContainer h2 {
-    inline-size: 80%;
-    margin-block-end: 20px;
-    font-size: 20px;
     line-height: 26px;
     font-weight: 400;
-    text-align: center;
-
-    color: rgb(80, 92, 92);
-
-    opacity: 0;
-
-    animation: slideInSmall ease-in-out 1000ms forwards;
-    animation-delay: 400ms;
   }
 
-  .HeroSection .TitleContainer h2 span {
-    color: var(--secondary-color-dark);
-    font-weight: 600;
-  }
   .HeroSection .TitleContainer a {
-    padding-inline: 20px;
-    padding-block: 12px;
-
-    position: relative;
-
-    border: 3px solid rgb(44, 92, 112);
-
-    border-radius: 40px;
-
     font-size: 16px;
-    color: #1c5b7f;
-    text-decoration: none;
-    text-align: center;
-    font-weight: 600;
-
-    text-transform: uppercase;
-
-    opacity: 0;
-
-    animation: slideInSmall ease-in-out 1000ms forwards;
-    animation-delay: 600ms;
   }
 
   .HeroSection .TitleContainer a .DecoratorContainer {
-    position: absolute;
     top: 48px;
     right: -10px;
-
-    display: flex;
   }
 
   .HeroSection .TitleContainer a .Decorator {
@@ -126,16 +50,6 @@
 
     position: absolute;
     bottom: -38px;
-    right: 0px;
-
-    background-color: #1c5b7f;
-
-    mask-image: url("/jeringa_decorator.webp");
-    mask-repeat: no-repeat;
-    mask-size: contain;
-    mask-position: center;
-
-    transform: rotateZ(70deg);
   }
 
   .HeroSection .TitleContainer a .Decorator:nth-of-type(2) {
@@ -145,15 +59,32 @@
     position: absolute;
     bottom: -0px;
     right: -40px;
-    /* left: -28px; */
+  }
+}
 
-    background-color: #1c5b7f;
-
-    mask-image: url("/lip_decorator.webp");
-    mask-repeat: no-repeat;
-    mask-size: contain;
-    mask-position: center;
-
-    transform: rotateZ(45deg);
+@media (1100px < width < 1920px) {
+  .HeroSection .Background::before {
+    left: -80%;
+    top: -20%;
+  }
+  .HeroSection .Background::after {
+    left: 80%;
+    top: 20%;
+  }
+}
+@media (1360px < width < 1920px) {
+  .HeroSection .Background::before {
+    top: -40%;
+  }
+  .HeroSection .Background::after {
+    top: 40%;
+  }
+}
+@media (1600px < width < 1920px) {
+  .HeroSection .Background::before {
+    top: -60%;
+  }
+  .HeroSection .Background::after {
+    top: 60%;
   }
 }

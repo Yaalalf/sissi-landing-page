@@ -6,9 +6,11 @@ import { useEffect, useRef } from "react";
 export default function VisibilityObserver({
   onVisibility,
   className,
+  once = false,
 }: {
   onVisibility: (entry: IntersectionObserverEntry) => void;
   className?: string;
+  once?: boolean;
 }) {
   const visibilityObserverRef = useRef(null);
 
@@ -18,8 +20,11 @@ export default function VisibilityObserver({
 
       const intersectionObserver = new IntersectionObserver(
         (entries) => {
-          console.log(entries);
           onVisibility(entries[0]);
+          if (entries[0].isIntersecting && once) {
+            intersectionObserver.unobserve(nodeRef);
+            intersectionObserver.disconnect();
+          }
         },
         { threshold: [1] }
       );
@@ -32,12 +37,12 @@ export default function VisibilityObserver({
         }
       };
     }
-  }, []);
+  }, [onVisibility, once]);
 
   return (
     <div
       ref={visibilityObserverRef}
-      className={`VisibilityObserver ${className}`}
+      className={`VisibilityObserver ${className || ""}`}
     ></div>
   );
 }

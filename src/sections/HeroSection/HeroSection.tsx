@@ -15,10 +15,10 @@ export default function HeroSection() {
         </h2>
         <a href="/#">
           Agenda una Cita
-          <div className="DecoratorContainer">
+          {/* <div className="DecoratorContainer">
             <div className="Decorator"></div>
             <div className="Decorator"></div>
-          </div>
+          </div> */}
         </a>
       </div>
 

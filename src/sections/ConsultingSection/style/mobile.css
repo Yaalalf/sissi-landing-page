@@ -1,0 +1,62 @@
+.ConsultingSection {
+  block-size: auto;
+
+  position: relative;
+
+  background-color: var(--primary-color);
+}
+
+.ConsultingSection .TitleSection {
+  padding: 20px;
+  padding-block-start: 32px;
+  padding-block-end: 0px;
+}
+
+.ConsultingSection .Background {
+  inline-size: 100%;
+  block-size: 240px;
+
+  position: relative;
+  top: 0px;
+
+  background-color: var(--primary-color-dark);
+  background-image: url("/consulting_background.png");
+  background-repeat: no-repeat;
+  background-size: 110%;
+  background-position: center;
+}
+.ConsultingSection .Decoration_Icon {
+  inline-size: 120px;
+  block-size: 120px;
+
+  position: absolute;
+  top: 68px;
+  right: -10px;
+
+  background-color: rgb(220, 220, 220);
+
+  mask-image: url("/doctora-icon.png");
+
+  mask-position: center bottom;
+  mask-size: contain;
+  mask-repeat: no-repeat;
+
+  z-index: 0;
+
+  mix-blend-mode: soft-light;
+}
+.ConsultingSection .MicroSection {
+  padding: 20px;
+}
+.ConsultingSection .MicroSection h5 {
+  margin-block-end: 8px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 22px;
+
+  color: var(--primary-color-dark);
+}
+
+.ConsultingSection .MicroSection p {
+  font-size: 18px;
+  color: #232327;
+}

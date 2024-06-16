@@ -1,0 +1,22 @@
+.TitleContainer {
+  inline-size: 320px;
+
+  margin-block-end: 20px;
+}
+
+.TitleContainer h3 {
+  margin-block-end: 4px;
+
+  font-family: "Times New Roman", Times, serif;
+  font-size: 30px;
+
+  color: var(--primary-color-dark);
+}
+
+.TitleContainer h4 {
+  font-family: DIN;
+  font-weight: 500;
+
+  color: rgb(75, 80, 81);
+  text-transform: uppercase;
+}
