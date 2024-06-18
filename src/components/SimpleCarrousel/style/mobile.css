@@ -52,9 +52,12 @@
   background-image: url("/arms.webp");
   background-repeat: no-repeat;
   background-position: center bottom;
-  background-size: 120%;
+  background-size: contain;
 }
-
+.SimpleCarrousel .SliderContainer .Slider .One .Content {
+  inline-size: 150%;
+  left: 0%;
+}
 .SimpleCarrousel .SliderContainer .Slider .Two .Content {
   background-size: contain;
   background-position: center bottom;

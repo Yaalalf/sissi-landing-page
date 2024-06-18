@@ -56,6 +56,11 @@
     background-size: contain;
   }
 
+  .SimpleCarrousel .SliderContainer .Slider .One .Content {
+    inline-size: 120%;
+    left: 0%;
+  }
+
   .SimpleCarrousel .SliderContainer .Slider .Two .Content {
     background-size: 80%;
     background-position: center bottom;
