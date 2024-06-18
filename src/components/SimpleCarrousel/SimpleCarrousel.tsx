@@ -145,7 +145,7 @@ const data = [
   },
   {
     className: "Two",
-    description1: "Rellenos Faciales",
+    description1: "Tratamientos Dermocosméticos",
     description2: "Rellena líneas finas y arrugas",
     icon1: "/mascara_icon.png",
     icon2: "/hilo_icon.png",
@@ -153,7 +153,7 @@ const data = [
   },
   {
     className: "Three",
-    description2: "Aumento de Labios",
+    description2: "Rellenos en los Labios",
     description1: "Define el contorno de los labios",
     icon2: "/tenedor_icon.png",
     icon1: "/hilo_icon.png",
