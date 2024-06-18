@@ -21,6 +21,8 @@ export default function ConsultingSection() {
       </div>
 
       <div className="MicroSection">
+        <div className="Decoration"></div>
+
         <div className="HeaderContainer">
           <h5>Diagnóstico facial y orientación dermocosmética</h5>
         </div>
@@ -31,7 +33,6 @@ export default function ConsultingSection() {
           orientación dermocosmética adecuada son esenciales para tener una piel
           sana, radiante y joven.
         </p>
-        <div className="Decoration"></div>
         {/* <div className="Decoration"></div> */}
 
         {/* <p>
@@ -41,9 +42,12 @@ export default function ConsultingSection() {
         </p> */}
       </div>
 
-      {/* <div className="MicroSection">
+      <div className="MicroSection">
         <div className="Decoration"></div>
-        <h5>Nutrición y orientación nutricosmética</h5>
+        <div className="HeaderContainer">
+          <h5>Nutrición y orientación nutricosmética</h5>
+        </div>
+
         <p>
           La belleza y la salud de la piel no solo dependen de los productos que
           aplicamos externamente, sino también de lo que consumimos. La
@@ -52,15 +56,16 @@ export default function ConsultingSection() {
             nutricosmética desempeñan un papel crucial en el mantenimiento de la
             piel.
           </span>
-        </p> */}
-      {/* <p>
+        </p>
+        {/* <p>
           La nutricosmética se enfoca en el uso de suplementos alimenticios que
           proporcionan nutrientes esenciales para mejorar la salud y apariencia
           de la piel desde el interior.
         </p> */}
-      {/* <div className="Decoration"></div>
-      </div>*/}
+        {/* <div className="Decoration"></div> */}
+      </div>
       <div className="Decoration_Icon"></div>
+      <div className="Decoration"></div>
     </section>
   );
 }

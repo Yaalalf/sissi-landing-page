@@ -1,8 +1,6 @@
 .ConsultingSection {
   block-size: auto;
 
-  padding-block-end: 40px;
-
   position: relative;
 
   background-color: var(--primary-color);
@@ -17,6 +15,8 @@
 .ConsultingSection .BackgroundAnimated {
   inline-size: 100%;
   block-size: 240px;
+
+  margin-block-end: 40px;
 
   position: relative;
   top: 0px;
@@ -197,27 +197,20 @@
 /*******************************************MiroSection**************************************/
 
 .ConsultingSection .MicroSection {
-  margin-inline: 12px;
+  margin-inline: 8px;
   margin-block: 20px;
 
-  padding: 40px;
-  padding-inline: 40px;
-  padding-block-end: 4px;
+  padding-block-end: 20px;
 
   position: relative;
 
   background-color: rgb(224, 230, 234);
-
-  padding-block-end: 148px;
-
   border-radius: 12px;
+
+  overflow: hidden;
+
+  text-align: center;
 }
-/* .ConsultingSection .MicroSectionContainer .MicroSection:nth-of-type(3) {
-  padding-block-end: 280px;
-}
-.ConsultingSection .MicroSection:nth-of-type(4) {
-  padding-block-end: 240px;
-} */
 
 .ConsultingSection .MicroSection .HeaderContainer {
   position: relative;
@@ -225,7 +218,10 @@
 
 .ConsultingSection .MicroSection .HeaderContainer h5 {
   inline-size: 100%;
+  margin-block-start: 28px;
   margin-block-end: 8px;
+
+  padding-inline: 20px;
 
   font-family: "Times New Roman", Times, serif;
   font-size: 26px;
@@ -234,21 +230,10 @@
 
   z-index: 8;
 }
-
-/* .ConsultingSection .MicroSection:nth-of-type(3) .HeaderContainer .Decoration {
-  inline-size: 180px;
-  block-size: 180px;
-  position: absolute;
-  top: -48px;
-  right: -40px;
-
-  background-size: contain;
-  background-image: url("/dermocosmetica.webp");
-  background-position: center top;
-} */
-
 .ConsultingSection .MicroSection p {
-  font-size: 20px;
+  padding-inline: 20px;
+  margin-block-end: 20px;
+  font-size: 18px;
   color: #232327;
 }
 
@@ -256,56 +241,49 @@
   inline-size: 100%;
   block-size: 160px;
 
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
+  background-color: var(--secondary-color);
 
-  background-position: center top;
-  background-size: 60%;
+  background-size: 80%;
+  background-image: url("/dermocosmetica.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* .ConsultingSection .MicroSection .Decoration:nth-of-type(3) {
+  inline-size: 200px;
+  block-size: 200px;
+
+  position: absolute;
+  bottom: -40px;
+  right: -40px;
+
+  background-position: center center;
+  background-size: contain;
   background-image: url("/dermocosmetista.webp");
   background-repeat: no-repeat;
 
   z-index: 3;
-}
-
-/* .ConsultingSection .MicroSection:nth-of-type(3) p span {
-  display: inline-block;
-  padding-inline-start: 150px;
 } */
 
-/* .ConsultingSection .MicroSection:nth-of-type(4) p span {
-  display: inline-block;
-  padding-inline-end: 150px;
-}
-.ConsultingSection .MicroSection .Decoration {
-  inline-size: 320px;
-  block-size: 200px;
-
-  background-position: center bottom;
-  background-size: contain;
+.ConsultingSection .MicroSection:nth-of-type(4) .Decoration {
+  background-size: 80%;
+  background-position: center;
   background-repeat: no-repeat;
-}
-
-.ConsultingSection .MicroSection:nth-of-type(4) .Decoration:nth-of-type(1) {
-  position: absolute;
-  top: -60px;
-  right: -120px;
-
   background-image: url("/nutricosmetica.webp");
 }
-.ConsultingSection .MicroSection:nth-of-type(4) .Decoration:nth-of-type(2) {
-  inline-size: 110%;
-  block-size: 440px;
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
+
+.ConsultingSection .Decoration {
+  inline-size: 100%;
+  block-size: 420px;
 
   background-position: left bottom;
   background-size: contain;
+  background-repeat: no-repeat;
+
   background-image: url("/nutricionista.webp");
 
   z-index: 0;
-} */
+}
 /******************************Animations*********************************/
 
 @keyframes movementOne {
