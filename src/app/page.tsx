@@ -1,5 +1,7 @@
 import InformationTopBanner from "@/components/InformationTopBanner/InformationTopBanner";
+import AppointmentSection from "@/sections/AppointmentSection/AppointmentSection";
 import ConsultingSection from "@/sections/ConsultingSection/ConsultingSection";
+import FooterSection from "@/sections/FooterSection/FooterSection";
 import HeaderSection from "@/sections/HeaderSection/HeaderSection";
 import HeroSection from "@/sections/HeroSection/HeroSection";
 import IndividualSection from "@/sections/IndividualSection/IndividualSection";
@@ -14,6 +16,8 @@ export default function Home() {
       <IndividualSection />
       <TreatmentSection />
       <ConsultingSection />
+      <AppointmentSection />
+      <FooterSection />
     </main>
   );
 }

@@ -1,0 +1,26 @@
+@media (1024px <= width <= 1920px) {
+  .TitleContainer {
+    inline-size: 640px;
+    margin-block-end: 20px;
+    text-align: center;
+  }
+
+  .TitleContainer h3 {
+    margin-block-end: 4px;
+
+    font-family: "Times New Roman", Times, serif;
+    font-size: 44px;
+
+    color: var(--primary-color-dark);
+  }
+
+  .TitleContainer h4 {
+    font-size: 20px;
+
+    font-family: DIN;
+    font-weight: 500;
+
+    color: rgb(75, 80, 81);
+    text-transform: uppercase;
+  }
+}

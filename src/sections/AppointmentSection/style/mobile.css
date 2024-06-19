@@ -1,0 +1,119 @@
+.AppointmentSection {
+  inline-size: 100%;
+  block-size: auto;
+
+  padding-block: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+
+  background-color: var(--primary-color-dark);
+}
+
+.AppointmentSection .Background {
+  inline-size: 100%;
+  block-size: 100%;
+
+  position: absolute;
+  background-image: url("/cita.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  opacity: 1;
+
+  filter: blur(3px) grayscale(100%);
+
+  mix-blend-mode: soft-light;
+}
+
+.AppointmentSection .Content {
+  inline-size: 90%;
+  block-size: 90%;
+
+  padding-block-start: 120px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--primary-color-dark);
+
+  border-radius: 12px;
+
+  position: relative;
+  z-index: 5;
+
+  overflow: hidden;
+}
+
+.AppointmentSection .Content p {
+  font-size: 28px;
+  padding-inline: 20px;
+
+  text-align: center;
+  color: var(--primary-color);
+}
+
+.AppointmentSection .Content a {
+  inline-size: 220px;
+  block-size: 56px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-block-start: 12px;
+
+  position: relative;
+
+  border: 3px solid white;
+
+  border-radius: 40px;
+
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.AppointmentSection .Content .Decoration {
+  inline-size: 280px;
+  block-size: 280px;
+
+  position: relative;
+  top: 20px;
+  left: 10px;
+
+  background-image: url("/cita.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.AppointmentSection .Content .Decoration_Icon {
+  inline-size: 100%;
+  block-size: 100%;
+
+  position: absolute;
+  top: -60%;
+  right: -60%;
+
+  background-color: #53566e;
+
+  mask-image: url("/cita_icon.webp");
+
+  mask-position: center bottom;
+  mask-size: contain;
+  mask-repeat: no-repeat;
+
+  mix-blend-mode: soft-light;
+
+  z-index: 0;
+}

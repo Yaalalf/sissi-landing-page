@@ -110,7 +110,8 @@
 }
 /******************************************************************************************/
 .IndividualSection p {
-  font-size: 18px;
+  font-size: 20px;
+  line-height: 28px;
 
   color: rgb(56, 56, 62);
 }
@@ -121,24 +122,14 @@
 }
 
 /*******************************************************************************************/
-.IndividualSection .DecorationPositioned {
+
+.IndividualSection .Decoration {
   inline-size: 100%;
   block-size: 200px;
 
   position: absolute;
 
   bottom: 0px;
-}
-
-.IndividualSection .DecorationPositioned .DecorationContainer {
-  inline-size: 100%;
-  block-size: 100%;
-  position: relative;
-}
-
-.IndividualSection .DecorationPositioned .DecorationContainer .Decoration {
-  inline-size: 100%;
-  block-size: 100%;
 
   background-image: url("/skin_type.webp");
   background-position: center bottom;

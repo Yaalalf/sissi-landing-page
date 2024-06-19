@@ -51,11 +51,8 @@ export default function ConsultingSection() {
         <p>
           La belleza y la salud de la piel no solo dependen de los productos que
           aplicamos externamente, sino también de lo que consumimos. La
-          nutrición adecuada y la orientación <br />
-          <span>
-            nutricosmética desempeñan un papel crucial en el mantenimiento de la
-            piel.
-          </span>
+          nutrición adecuada y la orientación nutricosmética desempeñan un papel
+          crucial en el mantenimiento de la piel.
         </p>
         {/* <p>
           La nutricosmética se enfoca en el uso de suplementos alimenticios que
@@ -65,7 +62,7 @@ export default function ConsultingSection() {
         {/* <div className="Decoration"></div> */}
       </div>
       <div className="Decoration_Icon"></div>
-      <div className="Decoration"></div>
+      {/* <div className="Decoration"></div> */}
     </section>
   );
 }

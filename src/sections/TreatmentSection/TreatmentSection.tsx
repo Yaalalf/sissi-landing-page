@@ -1,5 +1,6 @@
 import TitleContainer from "@/components/TitleContainer/TitleContainer";
 import "./style/mobile.css";
+import "./style/desktop_media_query.css";
 
 export default function TreatmentSection() {
   return (
@@ -13,24 +14,28 @@ export default function TreatmentSection() {
       </div>
       <div className="TreatmentContainer FacialSection">
         <div className="Content">
+          <h5>Donde tu belleza es nuestra misión.</h5>
           <p>
-            Tratamientos faciales diseñados para rejuvenecer tu piel, mejorar tu
-            apariencia y aumentar tu confianza.
+            <span>Tratamientos faciales</span> diseñados para{" "}
+            <span>rejuvenecer tu piel</span> y{" "}
+            <span>mejorar tu apariencia.</span>
           </p>
           <a href="/#">Tratamientos Faciales</a>
         </div>
         <div className="Decoration"></div>
+        <div className="LogoIcon"></div>
       </div>
 
       <div className="TreatmentContainer CorporalSection">
         <div className="Content">
+          <h5>Transformando cuerpos, elevando confianza.</h5>
           <p>
-            Tratamientos faciales diseñados para rejuvenecer tu piel, mejorar tu
-            apariencia y aumentar tu confianza.
+            <span>Tratamientos corporales</span> para ayudarte a{" "}
+            <span>lucir</span> y <span>sentirte mejor</span> que nunca.
           </p>
-          <a href="/#">Tratamientos Faciales</a>
+          <a href="/#">Tratamientos Corporales</a>
         </div>
-        <div className="Decoration"></div>
+        <div className="Decoration"></div> <div className="LogoIcon"></div>
       </div>
 
       {/* <div className="TreatmentContainer">

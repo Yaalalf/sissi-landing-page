@@ -1,0 +1,348 @@
+@media (1024px <= width <= 1920px) {
+  .TreatmentSection {
+    inline-size: 100%;
+    block-size: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-block-start: 80px;
+
+    background-color: var(--primary-color);
+  }
+
+  .TreatmentSection .TitleSection {
+    inline-size: 760px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 20px;
+
+    position: relative;
+  }
+
+  .TreatmentSection .TitleSection .TitleContainer {
+    inline-size: 100%;
+
+    position: relative;
+    z-index: 2;
+  }
+
+  .TreatmentSection .TitleSection .Decoration_Icon {
+    inline-size: 180px;
+    block-size: 180px;
+
+    position: absolute;
+    top: -28px;
+    right: -20px;
+
+    background-color: #d9dcec;
+
+    mask-image: url("/tratamientos.svg");
+
+    mask-position: center bottom;
+    mask-size: contain;
+    mask-repeat: no-repeat;
+
+    z-index: 0;
+
+    mix-blend-mode: overlay;
+  }
+
+  .TreatmentSection .TreatmentContainer {
+    overflow: hidden;
+  }
+
+  .TreatmentSection .TreatmentContainer::before {
+    inline-size: 50%;
+    block-size: 50%;
+
+    display: block;
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: -60%;
+
+    background-color: var(--primary-color-dark);
+
+    opacity: 0.2;
+
+    transform: rotateZ(45deg);
+
+    animation: climbTwo ease-in-out 8000ms infinite;
+  }
+  .TreatmentSection .TreatmentContainer::after {
+    inline-size: 100%;
+    block-size: 100%;
+
+    display: block;
+    content: "";
+    position: absolute;
+    left: 60%;
+    top: 80%;
+
+    background-color: var(--primary-color-dark);
+
+    opacity: 0.1;
+
+    transform: rotateZ(45deg);
+
+    animation: climbOne ease-in-out 5000ms infinite;
+  }
+  .TreatmentSection .TreatmentContainer:nth-of-type(2):before {
+    left: -30%;
+    top: -60%;
+
+    background-color: var(--primary-color);
+  }
+  .TreatmentSection .TreatmentContainer:nth-of-type(2)::after {
+    left: -20%;
+    top: 80%;
+    background-color: var(--primary-color);
+  }
+
+  .TreatmentSection .TreatmentContainer .LogoIcon {
+    inline-size: 400px;
+    block-size: 400px;
+
+    position: absolute;
+
+    background-color: white;
+    left: 0%;
+    bottom: -20%;
+
+    mask-image: url("/icons/marca-logo-mini.svg");
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    mask-position: center;
+
+    mix-blend-mode: soft-light;
+  }
+  .TreatmentSection .TreatmentContainer:nth-of-type(3) .LogoIcon {
+    background-color: white;
+    left: auto;
+    right: 0%;
+    bottom: -20%;
+
+    mask-image: url("/icons/marca-logo-mini.svg");
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    mask-position: center;
+
+    mix-blend-mode: soft-light;
+  }
+  /*************************************Facial*************************************************/
+  .TreatmentSection .FacialSection {
+    position: relative;
+
+    inline-size: 100%;
+    block-size: 400px;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+
+    background-color: var(--primary-color-dark);
+  }
+
+  .TreatmentSection .FacialSection .Decoration {
+    inline-size: 25%;
+    block-size: 100%;
+
+    flex-shrink: 0;
+
+    position: relative;
+    right: 0px;
+
+    background-image: url("/tratamientos-faciales.webp");
+
+    background-size: 140%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .TreatmentSection .FacialSection .Content {
+    inline-size: 400px;
+
+    padding: 8px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .TreatmentSection .FacialSection .Content h5 {
+    margin-block-end: 8px;
+    inline-size: 100%;
+
+    font-size: 28px;
+    line-height: 32px;
+    font-family: "Times New Roman", Times, serif;
+    color: var(--primary-color);
+    text-align: center;
+  }
+
+  .TreatmentSection .FacialSection .Content p {
+    inline-size: 100%;
+
+    color: #d4dce6;
+
+    text-align: center;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .TreatmentSection .FacialSection .Content p span {
+    color: var(--secondary-color);
+    font-weight: 600;
+  }
+
+  .TreatmentSection .FacialSection .Content a {
+    inline-size: 280px;
+    block-size: 56px;
+
+    margin-block-start: 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    border: 3px solid rgb(106, 158, 180);
+
+    border-radius: 40px;
+
+    font-size: 16px;
+    color: rgb(106, 158, 180);
+    text-decoration: none;
+    text-align: center;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+  /*****************************Corporal***************************************/
+
+  .TreatmentSection .CorporalSection {
+    position: relative;
+
+    inline-size: 100%;
+    block-size: 400px;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-end;
+
+    background-color: var(--primary-color);
+  }
+
+  .TreatmentSection .CorporalSection .Decoration {
+    inline-size: 28%;
+    block-size: 100%;
+
+    flex-shrink: 0;
+    position: relative;
+    left: 0px;
+
+    background-image: url("/tratamientos-corporales.webp");
+
+    background-size: 170%;
+    background-position: -210px 0px;
+    background-repeat: no-repeat;
+  }
+
+  .TreatmentSection .CorporalSection .Content {
+    inline-size: 400px;
+
+    padding: 8px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .TreatmentSection .CorporalSection .Content h5 {
+    inline-size: 120%;
+
+    margin-block-end: 8px;
+
+    font-size: 28px;
+    line-height: 32px;
+    font-family: "Times New Roman", Times, serif;
+
+    color: var(--primary-color-dark);
+
+    text-align: center;
+  }
+  .TreatmentSection .CorporalSection .Content p {
+    inline-size: 100%;
+
+    color: rgb(47, 47, 60);
+
+    text-align: center;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .TreatmentSection .CorporalSection .Content p span {
+    color: var(--secondary-color-dark);
+    font-weight: 600;
+  }
+
+  .TreatmentSection .CorporalSection .Content a {
+    inline-size: 300px;
+    block-size: 56px;
+
+    margin-block-start: 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    border: 3px solid rgb(24, 64, 81);
+
+    border-radius: 40px;
+
+    font-size: 16px;
+    color: rgb(24, 64, 81);
+    text-decoration: none;
+    text-align: center;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+}
+@media (1280px <= width <= 1920px) {
+  .TreatmentSection .TreatmentContainer .LogoIcon {
+    left: 10%;
+  }
+  .TreatmentSection .TreatmentContainer:nth-of-type(3) .LogoIcon {
+    right: 10%;
+  }
+
+  /*****************************Corporal***************************************/
+
+  .TreatmentSection .CorporalSection .Decoration {
+    inline-size: 28%;
+    block-size: 100%;
+
+    flex-shrink: 0;
+    position: relative;
+    left: 0px;
+
+    background-image: url("/tratamientos-corporales.webp");
+
+    background-size: 150%;
+    background-position: -210px 0px;
+    background-repeat: no-repeat;
+  }
+}

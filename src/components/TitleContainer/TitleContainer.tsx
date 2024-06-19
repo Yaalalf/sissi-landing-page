@@ -1,5 +1,6 @@
 import AnimatedVisibilityObserver from "../AnimatedVisibilityObserver/AnimatedVisibilityObserver";
 import "./style/mobile.css";
+import "./style/desktop_media_query.css";
 
 export default function TitleContainer({
   title,

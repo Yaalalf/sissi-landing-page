@@ -1,6 +1,7 @@
 import TitleContainer from "@/components/TitleContainer/TitleContainer";
-import "./style/mobile.css";
 import AnimatedVisibilityObserver from "@/components/AnimatedVisibilityObserver/AnimatedVisibilityObserver";
+import "./style/mobile.css";
+import "./style/desktop_media_query.css";
 
 export default function IndividualSection() {
   return (
@@ -62,12 +63,9 @@ export default function IndividualSection() {
           </p>
         </AnimatedVisibilityObserver>
       </div>
-      <div className="DecorationPositioned">
-        <div className="DecorationContainer">
-          <div className="Decoration"></div>
-          {/* <div className="Decoration"></div> */}
-        </div>
-      </div>
+
+      <div className="Decoration"></div>
+
       <div className="Decoration_Icon"></div>
     </section>
   );

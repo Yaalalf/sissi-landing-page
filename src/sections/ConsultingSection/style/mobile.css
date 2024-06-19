@@ -1,9 +1,11 @@
 .ConsultingSection {
   block-size: auto;
 
+  padding-block-end: 20px;
+
   position: relative;
 
-  background-color: var(--primary-color);
+  background-color: rgb(228, 233, 237);
 }
 
 .ConsultingSection .TitleSection {
@@ -21,7 +23,7 @@
   position: relative;
   top: 0px;
 
-  background-color: var(--primary-color-dark);
+  background-color: rgb(183, 195, 202);
   /* background-image: url("/consulting_background-foreground.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -39,7 +41,7 @@
   position: absolute;
   left: -10%;
 
-  background-color: var(--primary-color);
+  background-color: var(--primary-color-dark);
 
   opacity: 0.2;
 
@@ -56,7 +58,7 @@
   position: absolute;
   left: 10%;
 
-  background-color: var(--primary-color);
+  background-color: var(--primary-color-dark);
 
   opacity: 0.1;
 
@@ -182,7 +184,7 @@
   top: 68px;
   right: -10px;
 
-  background-color: rgb(220, 220, 220);
+  background-color: rgb(166, 181, 198);
 
   mask-image: url("/doctora-icon.png");
 
@@ -191,8 +193,6 @@
   mask-repeat: no-repeat;
 
   z-index: 0;
-
-  mix-blend-mode: soft-light;
 }
 /*******************************************MiroSection**************************************/
 
@@ -204,7 +204,7 @@
 
   position: relative;
 
-  background-color: rgb(224, 230, 234);
+  background-color: var(--secondary-color);
   border-radius: 12px;
 
   overflow: hidden;
@@ -224,7 +224,7 @@
   padding-inline: 20px;
 
   font-family: "Times New Roman", Times, serif;
-  font-size: 26px;
+  font-size: 30px;
 
   color: var(--primary-color-dark);
 
@@ -233,7 +233,8 @@
 .ConsultingSection .MicroSection p {
   padding-inline: 20px;
   margin-block-end: 20px;
-  font-size: 18px;
+  font-size: 20px;
+  line-height: 24px;
   color: #232327;
 }
 
@@ -241,7 +242,7 @@
   inline-size: 100%;
   block-size: 160px;
 
-  background-color: var(--secondary-color);
+  background-color: var(--secondary-color-dark);
 
   background-size: 80%;
   background-image: url("/dermocosmetica.webp");

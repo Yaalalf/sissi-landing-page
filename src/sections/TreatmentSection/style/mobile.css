@@ -3,6 +3,8 @@
   block-size: auto;
 
   padding-block-start: 40px;
+
+  background-color: var(--primary-color);
 }
 
 .TreatmentSection .TitleSection {
@@ -24,7 +26,7 @@
   top: 28px;
   right: -20px;
 
-  background-color: rgb(220, 220, 220);
+  background-color: #d9dcec;
 
   mask-image: url("/tratamientos.svg");
 
@@ -34,7 +36,7 @@
 
   z-index: 0;
 
-  mix-blend-mode: soft-light;
+  mix-blend-mode: overlay;
 }
 /*************************************Facial*************************************************/
 .TreatmentSection .FacialSection {
@@ -50,7 +52,7 @@
   align-items: center;
   justify-content: flex-start;
 
-  background-color: rgb(217, 221, 225);
+  background-color: var(--primary-color-dark);
 }
 
 .TreatmentSection .FacialSection .Decoration {
@@ -72,21 +74,37 @@
 .TreatmentSection .FacialSection .Content {
   inline-size: 60%;
 
-  padding: 12px;
+  padding: 8px;
 
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+.TreatmentSection .FacialSection .Content h5 {
+  margin-block-end: 8px;
+  inline-size: 100%;
+
+  font-size: 28px;
+  line-height: 32px;
+  font-family: "Times New Roman", Times, serif;
+  color: var(--primary-color);
+  text-align: center;
+}
+
 .TreatmentSection .FacialSection .Content p {
   inline-size: 100%;
 
-  color: var(--primary-color-dark);
+  color: #d4dce6;
 
   text-align: center;
   font-size: 20px;
   line-height: 28px;
+}
+
+.TreatmentSection .FacialSection .Content p span {
+  color: var(--secondary-color);
+  font-weight: 600;
 }
 
 .TreatmentSection .FacialSection .Content a {
@@ -100,12 +118,12 @@
 
   position: relative;
 
-  border: 3px solid rgb(44, 92, 112);
+  border: 3px solid rgb(106, 158, 180);
 
   border-radius: 40px;
 
-  font-size: 14px;
-  color: #1c5b7f;
+  font-size: 16px;
+  color: rgb(106, 158, 180);
   text-decoration: none;
   text-align: center;
   font-weight: 800;
@@ -126,7 +144,7 @@
   align-items: center;
   justify-content: flex-start;
 
-  background-color: rgb(196, 224, 249);
+  background-color: var(--primary-color);
 }
 
 .TreatmentSection .CorporalSection .Decoration {
@@ -146,21 +164,38 @@
 .TreatmentSection .CorporalSection .Content {
   inline-size: 60%;
 
-  padding: 12px;
+  padding: 8px;
 
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+.TreatmentSection .CorporalSection .Content h5 {
+  inline-size: 120%;
 
-.TreatmentSection .CorporalSection .Content p {
-  inline-size: 100%;
+  margin-block-end: 8px;
+
+  font-size: 28px;
+  line-height: 32px;
+  font-family: "Times New Roman", Times, serif;
 
   color: var(--primary-color-dark);
 
   text-align: center;
+}
+.TreatmentSection .CorporalSection .Content p {
+  inline-size: 100%;
+
+  color: rgb(47, 47, 60);
+
+  text-align: center;
   font-size: 20px;
-  line-height: 28px;
+  line-height: 24px;
+}
+
+.TreatmentSection .CorporalSection .Content p span {
+  color: var(--secondary-color-dark);
+  font-weight: 600;
 }
 
 .TreatmentSection .CorporalSection .Content a {
@@ -178,7 +213,7 @@
 
   border-radius: 40px;
 
-  font-size: 14px;
+  font-size: 16px;
   color: #1c5b7f;
   text-decoration: none;
   text-align: center;
