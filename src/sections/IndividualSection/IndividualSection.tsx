@@ -49,7 +49,7 @@ export default function IndividualSection() {
               <div className="IconContainer">
                 <span className="Icon"></span>
               </div>
-              <span className="Text">Empieza a ser como nunca antes</span>
+              <span className="Text">Comienza con el cuidado de tu piel</span>
             </li>
           </AnimatedVisibilityObserver>
         </ul>

@@ -4,7 +4,7 @@ export default function InformationTopBanner() {
   return (
     <div className="InformationTopBanner">
       <p className="Phone">
-        <span className="Icon"></span>+34 103 453 687
+        <span className="Icon"></span>+34 967 740 850
       </p>
       <ul className="SocialMediaList">
         <li className="Icon"></li>
