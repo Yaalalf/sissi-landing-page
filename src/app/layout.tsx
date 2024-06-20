@@ -2,7 +2,10 @@ import type { Metadata, Viewport } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
 
-const roboto = Roboto({ weight: ["100","300","400","500","700","900"],subsets:['latin'] });
+const roboto = Roboto({
+  weight: ["100", "300", "400", "500", "700", "900"],
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -19,6 +22,21 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="32x32" />
+        <link
+          rel="icon"
+          href="/icon?<generated>"
+          type="image/<generated>"
+          sizes="<generated>"
+        />
+        <link
+          rel="apple-touch-icon"
+          href="/apple-icon?<generated>"
+          type="image/<generated>"
+          sizes="<generated>"
+        />
+      </head>
       <body className={roboto.className}>{children}</body>
     </html>
   );
