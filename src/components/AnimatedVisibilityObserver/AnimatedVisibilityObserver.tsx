@@ -47,7 +47,7 @@ export default function AnimatedVisibilityObserver({
       <VisibilityObserver
         className={`animated-observer ${classNameObserver || ""}`}
         onVisibility={(entry) => {
-          console.log("Animated", once, entry);
+          // console.log("Animated", once, entry);
 
           if (entry.isIntersecting) {
             setIsVisible(true);

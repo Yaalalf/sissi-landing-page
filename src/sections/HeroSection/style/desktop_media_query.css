@@ -1,6 +1,6 @@
-@media (1024px < width < 1920px) {
+@media (1024px <= width < 1920px) {
   .HeroSection {
-    block-size: 500px;
+    block-size: 600px;
 
     padding-block-start: 60px;
 
@@ -27,38 +27,19 @@
   }
 
   .HeroSection .TitleContainer .TextLogo {
-    block-size: 140px;
+    block-size: 180px;
+    inline-size: 440px;
   }
 
   .HeroSection .TitleContainer h2 {
-    line-height: 26px;
+    inline-size: 100%;
+    font-size: 22px;
+    line-height: 32px;
     font-weight: 400;
   }
 
   .HeroSection .TitleContainer a {
-    font-size: 16px;
-  }
-
-  .HeroSection .TitleContainer a .DecoratorContainer {
-    top: 48px;
-    right: -10px;
-  }
-
-  .HeroSection .TitleContainer a .Decorator {
-    inline-size: 50px;
-    block-size: 90px;
-
-    position: absolute;
-    bottom: -38px;
-  }
-
-  .HeroSection .TitleContainer a .Decorator:nth-of-type(2) {
-    inline-size: 40px;
-    block-size: 40px;
-
-    position: absolute;
-    bottom: -0px;
-    right: -40px;
+    font-size: 14px;
   }
 }
 

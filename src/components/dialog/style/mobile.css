@@ -1,0 +1,46 @@
+body:has(.dialog_container) {
+  overflow: hidden;
+}
+.dialog_container {
+  inline-size: 100vw;
+  block-size: 100vh;
+
+  position: fixed;
+
+  top: 0px;
+  left: 0px;
+
+  z-index: 99999999999;
+}
+.dialog_container .dialog_container_background {
+  inline-size: 100%;
+  block-size: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+
+  background-color: rgba(0, 0, 0, 0.276);
+}
+
+.dialog_container .dialog_container_background .dialog_container_close_area {
+  inline-size: 100%;
+  block-size: 100%;
+
+  position: absolute;
+
+  top: 0px;
+  left: 0px;
+
+  z-index: 1;
+}
+.dialog_container .dialog_container_background .dialog_container_content {
+  position: relative;
+  z-index: 5;
+
+  padding: 40px;
+  background-color: white;
+  border-radius: 4px;
+}

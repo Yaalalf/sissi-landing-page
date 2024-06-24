@@ -57,16 +57,16 @@
   }
 
   .SimpleCarrousel .SliderContainer .Slider .One .Content {
-    inline-size: 120%;
+    inline-size: 150%;
     left: 0%;
   }
 
   .SimpleCarrousel .SliderContainer .Slider .Two .Content {
-    background-size: 80%;
+    background-size: 98%;
     background-position: center bottom;
   }
   .SimpleCarrousel .SliderContainer .Slider .Three .Content {
-    background-size: 80%;
+    background-size: 100%;
     background-position: center bottom;
   }
   .SimpleCarrousel .SliderContainer .Slider .TransitionMarker.entered .Content {
@@ -144,7 +144,7 @@
     left: auto;
   }
   .Three .Card.Second {
-    bottom: 280px;
+    bottom: 360px;
     right: auto;
     left: 40px;
   }

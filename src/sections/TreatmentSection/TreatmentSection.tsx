@@ -1,4 +1,6 @@
 import TitleContainer from "@/components/TitleContainer/TitleContainer";
+import Link from "next/link";
+
 import "./style/mobile.css";
 import "./style/desktop_media_query.css";
 
@@ -20,7 +22,7 @@ export default function TreatmentSection() {
             <span>rejuvenecer tu piel</span> y{" "}
             <span>mejorar tu apariencia.</span>
           </p>
-          <a href="/#">Tratamientos Faciales</a>
+          <Link href="/tratamientosFaciales">Tratamientos Faciales</Link>
         </div>
         <div className="Decoration"></div>
         <div className="LogoIcon"></div>
@@ -33,7 +35,7 @@ export default function TreatmentSection() {
             <span>Tratamientos corporales</span> para ayudarte a{" "}
             <span>lucir</span> y <span>sentirte mejor</span> que nunca.
           </p>
-          <a href="/#">Tratamientos Corporales</a>
+          <Link href="/tratamientosFaciales">Tratamientos Corporales</Link>
         </div>
         <div className="Decoration"></div> <div className="LogoIcon"></div>
       </div>

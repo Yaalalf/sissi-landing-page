@@ -1,0 +1,141 @@
+@media (1024px <= width < 1920px) {
+  .HeaderSection {
+    inline-size: 100%;
+    block-size: 72px;
+
+    padding-inline: 40px;
+    padding-block: 4px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    top: 0px;
+
+    background-color: var(--primary-color-dark);
+
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.292);
+
+    z-index: 10000;
+
+    transition: all ease-in-out 300ms;
+  }
+
+  .HeaderSection.hero_state {
+    inline-size: 100%;
+    block-size: 92px;
+
+    background-color: transparent;
+    box-shadow: none;
+
+    top: 60px;
+  }
+
+  .HeaderSection .LogoContainer .Link {
+    display: flex;
+
+    align-items: center;
+    gap: 4px;
+  }
+
+  .HeaderSection.hero_state .Logo {
+    inline-size: 60px;
+    block-size: 80px;
+    background-color: var(--primary-color-dark);
+  }
+
+  .HeaderSection .Logo {
+    inline-size: 60px;
+    block-size: 50px;
+
+    background-color: var(--primary-color);
+
+    mask-image: url("/icons/marca-logo-mini.svg");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+    transition: all ease-in-out 300ms;
+  }
+
+  .HeaderSection .Text {
+    inline-size: 100px;
+    block-size: 60px;
+    background-color: var(--primary-color);
+
+    mask-image: url("/icons/marca-texto.svg");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+  }
+  /***************************NavList************************/
+  .HeaderSection .NavList {
+    list-style-type: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 24px;
+  }
+
+  .HeaderSection .NavList li {
+    inline-size: auto;
+    block-size: auto;
+
+    font-size: 16px;
+    font-weight: 500;
+
+    position: relative;
+  }
+
+  .HeaderSection.hero_state .NavList li {
+    position: relative;
+  }
+
+  .HeaderSection.hero_state
+    .NavList
+    li:not(.NavList li:last-of-type):hover::before {
+    inline-size: 100%;
+    block-size: 2px;
+
+    content: "";
+
+    position: absolute;
+    bottom: -8px;
+    left: 0px;
+
+    border-radius: 4px;
+
+    background-color: var(--primary-color-dark);
+  }
+
+  .HeaderSection .NavList li .Link {
+    padding-block: 12px;
+    padding-inline: 0px;
+
+    text-decoration: none;
+
+    color: var(--primary-color);
+  }
+  .HeaderSection.hero_state .NavList li .Link {
+    color: var(--primary-color-dark);
+  }
+  .HeaderSection .NavList li:last-of-type .Link {
+    margin-inline-start: 12px;
+
+    padding-inline: 32px;
+    border-radius: 40px;
+
+    background-color: var(--primary-color);
+    color: var(--primary-color-dark);
+  }
+  .HeaderSection.hero_state .NavList li:last-of-type .Link {
+    background-color: var(--primary-color-dark);
+    color: var(--primary-color);
+
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.267);
+  }
+
+  /*****************************************************************************************/
+}

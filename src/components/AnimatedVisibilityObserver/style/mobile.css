@@ -1,6 +1,6 @@
 .AnimatedVisibilityObserver {
   inline-size: 100%;
-  block-size: 100%;
+  block-size: auto;
   position: relative;
 }
 .AnimatedVisibilityObserver .AnimatedContainer {
