@@ -10,13 +10,13 @@ export default function TreatmentSection() {
       <div className="TitleSection">
         <TitleContainer
           title="Tratamientos médicos faciales y corporales para el cuidado de su piel"
-          subtitle="aumente su estetica"
+          subtitle="aumente su autoestima"
         />
         <div className="Decoration_Icon"></div>
       </div>
       <div className="TreatmentContainer FacialSection">
         <div className="Content">
-          <h5>Donde tu belleza es nuestra misión.</h5>
+          <h5>Donde su bienestar es nuestra misión.</h5>
           <p>
             <span>Tratamientos faciales</span> diseñados para{" "}
             <span>rejuvenecer tu piel</span> y{" "}

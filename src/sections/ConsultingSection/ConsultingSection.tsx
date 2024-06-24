@@ -45,7 +45,7 @@ export default function ConsultingSection() {
       <div className="MicroSection">
         <div className="Decoration"></div>
         <div className="HeaderContainer">
-          <h5>Nutrición y orientación nutricosmética</h5>
+          <h5>Evaluación nutricional y orientación nutricosmética</h5>
         </div>
 
         <p>
