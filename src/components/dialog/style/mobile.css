@@ -43,4 +43,13 @@ body:has(.dialog_container) {
   padding: 40px;
   background-color: white;
   border-radius: 4px;
+
+  opacity: 0;
+}
+
+.dialog_container .dialog_container_background .dialog_container_content.enter {
+  animation: slideLeftInSmall ease-in-out 300ms forwards;
+}
+.dialog_container .dialog_container_background .dialog_container_content.exit {
+  animation: slideLeftOutSmall ease-in-out 300ms forwards;
 }

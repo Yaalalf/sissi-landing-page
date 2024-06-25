@@ -1,7 +1,27 @@
 .FacialTreatmentSection {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
   padding-block-start: 100px;
+  padding-block-end: 40px;
 
   background-color: var(--primary-color);
+}
+
+.FacialTreatmentSection .TitleContainer {
+  text-align: center;
+}
+
+.FacialTreatmentSection > .P {
+  inline-size: 80%;
+
+  margin-block-end: 20px;
+  text-align: center;
+
+  font-size: 18px;
+  color: var(--primary-color-dark);
 }
 
 .FacialTreatmentSection .TreatmentList {
@@ -15,8 +35,21 @@
 
   gap: 20px;
 }
+
+.FacialTreatmentSection .TreatmentList .TreatmentItemContainer {
+  inline-size: auto;
+}
+
+.FacialTreatmentSection
+  .TreatmentList
+  .TreatmentItemContainer
+  .VisibilityObserver {
+  top: 20px;
+  bottom: auto;
+}
+
 .FacialTreatmentSection .TreatmentList .TreatmentItem {
-  inline-size: 340px;
+  inline-size: 320px;
   block-size: auto;
 
   background-color: rgb(222, 225, 230);
@@ -90,7 +123,7 @@
 
   gap: 20px;
 
-  padding: 24px;
+  padding: 20px;
   padding-block: 32px;
 
   position: relative;
@@ -99,11 +132,11 @@
 }
 
 .FacialTreatmentSection .TreatmentList .TreatmentItem .Content .Description p {
-  font-size: 20px;
+  font-size: 18px;
 
   color: rgb(79, 81, 84);
 }
-.FacialTreatmentSection .TreatmentList .TreatmentItem .Content .Benefits h4 {
+.FacialTreatmentSection .TreatmentList .TreatmentItem .Content h4 {
   margin-block-end: 12px;
 
   font-size: 16px;

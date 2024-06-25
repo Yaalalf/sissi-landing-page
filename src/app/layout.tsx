@@ -1,6 +1,5 @@
 import type { Metadata, Viewport } from "next";
 import { Roboto } from "next/font/google";
-import HeaderSection from "@/sections/HeaderSection/HeaderSection";
 import FooterSection from "@/sections/FooterSection/FooterSection";
 
 import "./globals.css";
@@ -27,7 +26,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={roboto.className}>
-        <HeaderSection />
         {children}
         <FooterSection />
       </body>

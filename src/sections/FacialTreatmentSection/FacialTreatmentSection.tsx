@@ -1,40 +1,55 @@
 import TitleContainer from "@/components/TitleContainer/TitleContainer";
 
 import "./style/mobile.css";
+import AnimatedVisibilityObserver from "@/components/AnimatedVisibilityObserver/AnimatedVisibilityObserver";
 
 export default function FacialTreatmentSection() {
   return (
     <section className="FacialTreatmentSection">
-      <TitleContainer title="Tratamientos Faciales" subtitle=" " />
+      <TitleContainer
+        title="Tratamientos Faciales"
+        subtitle="Cambia tu apariencia para siempre"
+      />
+      <AnimatedVisibilityObserver className="P" once delay={200}>
+        <p>
+          Descubre los mejores tratamientos faciales para mantener tu piel
+          saludable y radiante. Desde limpiezas profundas hasta técnicas
+          avanzadas de rejuvenecimiento, encuentra el tratamiento perfecto para
+          tus necesidades.
+        </p>
+      </AnimatedVisibilityObserver>
       <ul className="TreatmentList">
         {data.map((el) => (
-          <li key={el.title} className="TreatmentItem">
-            <div className="Title">
-              <div
-                className="Background"
-                style={{ backgroundImage: `url("${el.imgUrl}")` }}
-              ></div>
-              <h3>{el.title}</h3>
-            </div>
-            <div className="Content">
-              <div className="Description">
-                <p>{el.description}</p>
+          <AnimatedVisibilityObserver className="TreatmentItemContainer" once>
+            <li id={el.id} key={el.title} className="TreatmentItem">
+              <div className="Title">
+                <div
+                  className="Background"
+                  style={{ backgroundImage: `url("${el.imgUrl}")` }}
+                ></div>
+                <h3>{el.title}</h3>
               </div>
+              <div className="Content">
+                <div className="Description">
+                  <h4>Descripción</h4>
+                  <p>{el.description}</p>
+                </div>
 
-              <div className="Benefits">
-                <h4>Beneficios</h4>
-                <ul className="BenefitsList">
-                  {el.benefits.map((subEl, index) => (
-                    <li key={index}>{subEl}</li>
-                  ))}
-                </ul>
+                <div className="Benefits">
+                  <h4>Beneficios</h4>
+                  <ul className="BenefitsList">
+                    {el.benefits.map((subEl, index) => (
+                      <li key={index}>{subEl}</li>
+                    ))}
+                  </ul>
+                </div>
               </div>
-            </div>
-            <div
-              className="DecorationIcon"
-              style={{ maskImage: `url("${el.iconUrl}")` }}
-            ></div>
-          </li>
+              <div
+                className="DecorationIcon"
+                style={{ maskImage: `url("${el.iconUrl}")` }}
+              ></div>
+            </li>
+          </AnimatedVisibilityObserver>
         ))}
       </ul>
     </section>
@@ -43,6 +58,7 @@ export default function FacialTreatmentSection() {
 
 const data = [
   {
+    id: "botox",
     title: "Inyección de Toxina Botulínica (Botox)",
     description:
       "La inyección de toxina botulínica, comúnmente conocida como Botox, es un procedimiento no quirúrgico que implica la inyección de pequeñas dosis de toxina botulínica tipo A en los músculos faciales. Este tratamiento ayuda a reducir la apariencia de líneas de expresión y arrugas al relajar los músculos subyacentes.",
@@ -54,11 +70,13 @@ const data = [
       "Procedimiento mínimamente invasivo con poco tiempo de recuperación",
       "Prevención de nuevas arrugas y líneas finas",
     ],
-    imgUrl: "/botox_treatment.png",
-    iconUrl: "/icons/treatment/botox_treatment_icon.webp",
+    imgUrl: "/treatment/facial/botox_treatment.png",
+    iconUrl: "/icons/treatment/facial/botox_treatment_icon.webp",
   },
 
   {
+    id: "rellenos",
+
     title: "Rellenos con Ácido Hialurónico",
     description:
       "Los rellenos dérmicos con ácido hialurónico son inyecciones que aportan volumen y firmeza a la piel. El ácido hialurónico es una sustancia natural que retiene agua, lo que proporciona hidratación y volumen a la piel.",
@@ -69,11 +87,13 @@ const data = [
       "Resultados inmediatos y naturales.",
       "Hidrata profundamente la piel.",
     ],
-    imgUrl: "/relleno_treatment.jpg",
-    iconUrl: "/icons/treatment/relleno_treatment_icon.webp",
+    imgUrl: "/treatment/facial/relleno_treatment.jpg",
+    iconUrl: "/icons/treatment/facial/relleno_treatment_icon.webp",
   },
 
   {
+    id: "peelings",
+
     title: "Peelings Médicos Faciales",
     description:
       "El peeling médico facial es un tratamiento que utiliza soluciones químicas para exfoliar y eliminar las capas superficiales de la piel, promoviendo así la regeneración de nuevas células cutáneas.",
@@ -83,10 +103,12 @@ const data = [
       "Estimula la producción de colágeno.",
       "Proporciona una piel más luminosa y rejuvenecida.",
     ],
-    imgUrl: "/peeling_treatment.jpg",
-    iconUrl: "/icons/treatment/peeling_treatment_icon.webp",
+    imgUrl: "/treatment/facial/peeling_treatment.jpg",
+    iconUrl: "/icons/treatment/facial/peeling_treatment_icon.webp",
   },
   {
+    id: "radiofrecuencia",
+
     title: "Radiofrecuencia Facial",
     description:
       "La radiofrecuencia facial es un tratamiento no invasivo que utiliza ondas de radiofrecuencia para calentar las capas profundas de la piel, estimulando la producción de colágeno y elastina.",
@@ -96,10 +118,12 @@ const data = [
       "Resultados visibles sin tiempo de inactividad.",
       "Proporciona un efecto lifting natural.",
     ],
-    imgUrl: "radiofrecuencia-treatment.jpg",
-    iconUrl: "/icons/treatment/radiofrecuencia_treatment_icon.webp",
+    imgUrl: "/treatment/facial/radiofrecuencia-treatment.jpg",
+    iconUrl: "/icons/treatment/facial/radiofrecuencia_treatment_icon.webp",
   },
   {
+    id: "microdermoabrasión",
+
     title: "Microdermoabrasión Facial",
     description:
       "La microdermoabrasión facial es un procedimiento de exfoliación mecánica que utiliza cristales finos o una punta de diamante para eliminar las células muertas de la piel.",
@@ -109,10 +133,12 @@ const data = [
       "Estimula la regeneración celular.",
       "Mejora la absorción de productos tópicos.",
     ],
-    imgUrl: "microdermo-treatment.jpg",
-    iconUrl: "/icons/treatment/microdermo_treatment_icon.webp",
+    imgUrl: "/treatment/facial/microdermo-treatment.jpg",
+    iconUrl: "/icons/treatment/facial/microdermo_treatment_icon.webp",
   },
   {
+    id: "mesoterapia",
+
     title: "Mesoterapia Facial y Capilar",
     description:
       "La mesoterapia es un tratamiento que consiste en microinyecciones de vitaminas, minerales, aminoácidos y otros nutrientes directamente en la piel o el cuero cabelludo.",
@@ -122,10 +148,12 @@ const data = [
       "Mejora la calidad y crecimiento del cabello.",
       "Proporciona una piel más luminosa y saludable.",
     ],
-    imgUrl: "mesoterapia-treatment.jpg",
-    iconUrl: "/icons/treatment/mesoterapia_treatment_icon.webp",
+    imgUrl: "/treatment/facial/mesoterapia-treatment.jpg",
+    iconUrl: "/icons/treatment/facial/mesoterapia_treatment_icon.webp",
   },
   {
+    id: "plasma",
+
     title: "Plasma Rico en Plaquetas (PRP)",
     description:
       "El tratamiento con plasma rico en plaquetas (PRP) utiliza la sangre del paciente, que se centrifuga para concentrar las plaquetas y factores de crecimiento, y se inyecta de nuevo en la piel.",
@@ -135,10 +163,12 @@ const data = [
       "Acelera la cicatrización y rejuvenecimiento de la piel.",
       "Resultados naturales y biocompatibles.",
     ],
-    imgUrl: "",
-    iconUrl: "/icons/treatment/plasma_treatment_icon.webp",
+    imgUrl: "/treatment/facial/plasma-tratment.jpg",
+    iconUrl: "/icons/treatment/facial/plasma_treatment_icon.webp",
   },
   {
+    id: "bioestimulación",
+
     title: "Bioestimulación Celular con Vitaminas o Estimuladores de Colágeno",
     description:
       "La bioestimulación celular consiste en la inyección de vitaminas, minerales y estimuladores de colágeno para mejorar la salud y apariencia de la piel.",
@@ -148,10 +178,12 @@ const data = [
       "Mejora la firmeza y elasticidad de la piel.",
       "Proporciona una piel más radiante y saludable.",
     ],
-    imgUrl: "",
-    iconUrl: "/icons/treatment/bioestimulacion_treatment_icon.webp",
+    imgUrl: "/treatment/facial/bioestimulacion-traetment.jpg",
+    iconUrl: "/icons/treatment/facial/bioestimulacion_treatment_icon.webp",
   },
   {
+    id: "lifting",
+
     title: "Lifting con Hilos Tensores",
     description:
       "El lifting con hilos tensores es un procedimiento mínimamente invasivo que utiliza hilos biocompatibles para levantar y tensar la piel flácida.",
@@ -161,7 +193,7 @@ const data = [
       "Mejora la firmeza y contorno facial.",
       "Resultados duraderos con tiempo de recuperación mínimo.",
     ],
-    imgUrl: "",
-    iconUrl: "/icons/treatment/lifting_treatment_icon.webp",
+    imgUrl: "/treatment/facial/hilos-treatment.jpg",
+    iconUrl: "/icons/treatment/facial/lifting_treatment_icon.webp",
   },
 ];

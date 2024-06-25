@@ -12,11 +12,11 @@ import Dialog from "@/components/dialog";
 import Link from "next/link";
 
 export default function HeaderSection() {
-  const [selected, setSelected] = useState(0);
-
+  const [selected, setSelected] = useState("none");
+  const pathName = usePathname();
   const [isHero, setIsHero] = useState(true);
   const buttonRef = useRef(null);
-  const dialogRef = useRef(null);
+  const dialogRef = useRef<{ close: () => void }>(null);
 
   return (
     <>
@@ -27,10 +27,10 @@ export default function HeaderSection() {
         }}
         mobile={
           <>
-            <div className="LogoContainer">
+            <Link className="Link LogoContainer" href="/">
               <div className="Logo"></div>
               {!isHero && <div className="Text"></div>}
-            </div>
+            </Link>
 
             <button ref={buttonRef} className="Menu">
               <Dialog
@@ -41,8 +41,7 @@ export default function HeaderSection() {
                 <button
                   className="CloseButton"
                   onClick={(e) => {
-                    console.log("Tratando de cerrar");
-                    dialogRef.current.close();
+                    if (dialogRef.current) dialogRef.current.close();
                   }}
                 >
                   <span className="Icon"></span>
@@ -50,12 +49,63 @@ export default function HeaderSection() {
 
                 <nav>
                   <ul className="NavList">
-                    <li className="LogoContainer">
-                      <div className="Logo"></div>
-                      <div className="Text"></div>
+                    <li>
+                      <Link className="Link LogoContainer" href="/">
+                        <div className="Logo"></div>
+                        <div className="Text"></div>
+                      </Link>
                     </li>
-                    <li className="Item">Tratamientos Faciales</li>
-                    <li className="Item">Tratamientos Corporales</li>
+                    <li className="Item">
+                      <Link
+                        className="Link"
+                        href="/tratamientosFaciales"
+                        onClick={() => {
+                          if (dialogRef.current) dialogRef.current.close();
+                        }}
+                      >
+                        Tratamientos Faciales
+                        <span
+                          className={`ArrowIcon ${
+                            selected == "facial" ? "open" : "closed"
+                          }`}
+                          onClick={(e) => {
+                            e.preventDefault();
+                            e.stopPropagation();
+
+                            if (selected == "facial") {
+                              setSelected("none");
+                            } else {
+                              setSelected("facial");
+                            }
+                          }}
+                        ></span>
+                      </Link>
+
+                      {selected == "facial" && (
+                        <ul className="InnerNavList">
+                          {dataFacialTreatmentLink.map((el) => (
+                            <li key={el.id}>
+                              <Link
+                                onClick={() => {
+                                  if (dialogRef.current)
+                                    dialogRef.current.close();
+                                }}
+                                className="Link"
+                                href={`/tratamientosFaciales#${el.id}`}
+                              >
+                                {el.title}
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                    </li>
+                    <li className="Item">
+                      <Link className="Link" href="/tratamientosFaciales">
+                        Tratamientos Corporales
+                        <span className="ArrowIcon"></span>
+                      </Link>
+                    </li>
                     <li className="ItemCite">Agendar una Cita</li>
                   </ul>
                 </nav>
@@ -96,3 +146,42 @@ export default function HeaderSection() {
     </>
   );
 }
+
+const dataFacialTreatmentLink = [
+  {
+    id: "botox",
+    title: "Inyección de Toxina Botulínica",
+  },
+  {
+    id: "rellenos",
+    title: "Rellenos con Ácido Hialurónico",
+  },
+  {
+    id: "peelings",
+    title: "Peelings Médicos Faciales",
+  },
+  {
+    id: "radiofrecuencia",
+    title: "Radiofrecuencia Facial",
+  },
+  {
+    id: "microdermoabrasión",
+    title: "Microdermoabrasión Facial",
+  },
+  {
+    id: "mesoterapia",
+    title: "Mesoterapia Facial y Capilar",
+  },
+  {
+    id: "plasma",
+    title: "Plasma Rico en Plaquetas",
+  },
+  {
+    id: "bioestimulación",
+    title: "Bioestimulación Celular",
+  },
+  {
+    id: "lifting",
+    title: " Lifting con Hilos Tensores",
+  },
+];

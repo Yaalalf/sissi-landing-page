@@ -99,8 +99,8 @@
 }
 
 .NavMenu .CloseButton {
-  inline-size: 40px;
-  block-size: 40px;
+  inline-size: 32px;
+  block-size: 32px;
 
   background-color: transparent;
 
@@ -108,7 +108,7 @@
 
   border: none;
 
-  top: 40px;
+  top: 20px;
   right: 20px;
 }
 .NavMenu .CloseButton .Icon {
@@ -141,7 +141,7 @@
 }
 
 .NavMenu .NavList .LogoContainer {
-  margin-block-end: 60px;
+  margin-block-end: 8px;
 
   display: flex;
 
@@ -176,10 +176,38 @@
   mask-size: contain;
 }
 
-.NavMenu .NavList li.Item {
+.NavMenu .NavList li.Item .Link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 18px;
+
+  text-decoration: none;
+
   color: #c6d1d5;
 }
+.NavMenu .NavList li.Item .Link .ArrowIcon {
+  inline-size: 40px;
+  block-size: 40px;
+  display: inline-block;
 
+  background-color: #edf0f3;
+
+  mask-image: url("/icons/arrow-icon.svg");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+
+  transform: rotateZ(-90deg);
+}
+
+.NavMenu .NavList li.Item .Link .ArrowIcon.open {
+  transform: rotateZ(90deg);
+}
+.NavMenu .NavList li.Item .Link .ArrowIcon.closed {
+  transform: rotateZ(-90deg);
+}
 .NavMenu .NavList li.ItemCite {
   inline-size: 220px;
   padding-inline: 28px;
@@ -195,4 +223,21 @@
 
   background-color: var(--primary-color);
   color: var(--primary-color-dark);
+}
+
+.NavMenu .NavList .InnerNavList {
+  list-style-type: none;
+
+  padding-block: 8px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 8px;
+}
+.NavMenu .NavList li.Item .InnerNavList .Link {
+  font-size: 16px;
+
+  color: #b6c2c6;
 }

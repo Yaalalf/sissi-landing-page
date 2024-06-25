@@ -1,9 +1,13 @@
 import FacialTreatmentSection from "@/sections/FacialTreatmentSection/FacialTreatmentSection";
+import HeaderSection from "@/sections/HeaderSection/HeaderSection";
 
 export default function FacialTreatment() {
   return (
-    <main style={{ overflow: "hidden" }}>
-      <FacialTreatmentSection />
-    </main>
+    <>
+      <HeaderSection />
+      <main style={{ overflow: "hidden" }}>
+        <FacialTreatmentSection />
+      </main>
+    </>
   );
 }

@@ -32,7 +32,7 @@ export default forwardRef(function Dialog(
 
   const currentBoundingRect = useRef({ x: 0, y: 0 });
 
-  const DialogContainerRef = useRef<HTMLDivElement | null>(null);
+  const dialogContainerRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     if (parentElement.current) {
@@ -45,11 +45,12 @@ export default forwardRef(function Dialog(
     () => {
       return {
         close() {
-          setTimeout(() => {
-            console.log("cerrar");
+          dialogContainerRef.current?.classList.remove("enter");
+          dialogContainerRef.current?.classList.add("exit");
 
+          setTimeout(() => {
             setIsMenu(false);
-          }, 100);
+          }, 400);
         },
       };
     },
@@ -67,7 +68,7 @@ export default forwardRef(function Dialog(
                 onClick={(e) => onCloseMenu(e)}
               ></div>
               <div
-                ref={DialogContainerRef}
+                ref={dialogContainerRef}
                 className={`dialog_container_content ${className || " "}`}
                 style={{
                   top: currentBoundingRect.current.y,
@@ -85,18 +86,22 @@ export default forwardRef(function Dialog(
 
   function onClickMenu(e: MouseEvent) {
     e.stopPropagation();
-    console.log("hice Click");
-
     setIsMenu(true);
+    setTimeout(() => {
+      console.log(dialogContainerRef.current);
+      dialogContainerRef.current?.classList.remove("exit");
+      dialogContainerRef.current?.classList.add("enter");
+    }, 100);
   }
 
   function onCloseMenu(e: React.MouseEvent<HTMLElement>) {
     e.stopPropagation();
 
-    setTimeout(() => {
-      console.log("cerrar");
+    dialogContainerRef.current?.classList.remove("enter");
+    dialogContainerRef.current?.classList.add("exit");
 
+    setTimeout(() => {
       setIsMenu(false);
-    }, 100);
+    }, 400);
   }
 });
