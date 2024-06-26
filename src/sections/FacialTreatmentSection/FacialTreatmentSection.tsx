@@ -76,7 +76,7 @@ const data = [
       "Procedimiento mínimamente invasivo con poco tiempo de recuperación",
       "Prevención de nuevas arrugas y líneas finas",
     ],
-    imgUrl: "/treatment/facial/botox_treatment.png",
+    imgUrl: "/treatment/facial/botox_treatment.webp",
     iconUrl: "/icons/treatment/facial/botox_treatment_icon.webp",
   },
 
@@ -93,7 +93,7 @@ const data = [
       "Resultados inmediatos y naturales.",
       "Hidrata profundamente la piel.",
     ],
-    imgUrl: "/treatment/facial/relleno_treatment.jpg",
+    imgUrl: "/treatment/facial/relleno_treatment.webp",
     iconUrl: "/icons/treatment/facial/relleno_treatment_icon.webp",
   },
 
@@ -109,7 +109,7 @@ const data = [
       "Estimula la producción de colágeno.",
       "Proporciona una piel más luminosa y rejuvenecida.",
     ],
-    imgUrl: "/treatment/facial/peeling_treatment.jpg",
+    imgUrl: "/treatment/facial/peeling_treatment.webp",
     iconUrl: "/icons/treatment/facial/peeling_treatment_icon.webp",
   },
   {
@@ -124,7 +124,7 @@ const data = [
       "Resultados visibles sin tiempo de inactividad.",
       "Proporciona un efecto lifting natural.",
     ],
-    imgUrl: "/treatment/facial/radiofrecuencia-treatment.jpg",
+    imgUrl: "/treatment/facial/radiofrecuencia-treatment.webp",
     iconUrl: "/icons/treatment/facial/radiofrecuencia_treatment_icon.webp",
   },
   {
@@ -139,7 +139,7 @@ const data = [
       "Estimula la regeneración celular.",
       "Mejora la absorción de productos tópicos.",
     ],
-    imgUrl: "/treatment/facial/microdermo-treatment.jpg",
+    imgUrl: "/treatment/facial/microdermo-treatment.webp",
     iconUrl: "/icons/treatment/facial/microdermo_treatment_icon.webp",
   },
   {
@@ -154,7 +154,7 @@ const data = [
       "Mejora la calidad y crecimiento del cabello.",
       "Proporciona una piel más luminosa y saludable.",
     ],
-    imgUrl: "/treatment/facial/mesoterapia-treatment.jpg",
+    imgUrl: "/treatment/facial/mesoterapia-treatment.webp",
     iconUrl: "/icons/treatment/facial/mesoterapia_treatment_icon.webp",
   },
   {
@@ -169,7 +169,7 @@ const data = [
       "Acelera la cicatrización y rejuvenecimiento de la piel.",
       "Resultados naturales y biocompatibles.",
     ],
-    imgUrl: "/treatment/facial/plasma-tratment.jpg",
+    imgUrl: "/treatment/facial/plasma-tratment.webp",
     iconUrl: "/icons/treatment/facial/plasma_treatment_icon.webp",
   },
   {
@@ -184,7 +184,7 @@ const data = [
       "Mejora la firmeza y elasticidad de la piel.",
       "Proporciona una piel más radiante y saludable.",
     ],
-    imgUrl: "/treatment/facial/bioestimulacion-traetment.jpg",
+    imgUrl: "/treatment/facial/bioestimulacion-traetment.webp",
     iconUrl: "/icons/treatment/facial/bioestimulacion_treatment_icon.webp",
   },
   {
@@ -199,7 +199,7 @@ const data = [
       "Mejora la firmeza y contorno facial.",
       "Resultados duraderos con tiempo de recuperación mínimo.",
     ],
-    imgUrl: "/treatment/facial/hilos-treatment.jpg",
+    imgUrl: "/treatment/facial/hilos-treatment.webp",
     iconUrl: "/icons/treatment/facial/lifting_treatment_icon.webp",
   },
 ];
