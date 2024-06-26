@@ -41,7 +41,7 @@ export default function FacialTreatmentSection() {
                   <h4>Beneficios</h4>
                   <ul className="BenefitsList">
                     {el.benefits.map((subEl, index) => (
-                      <li key={index}>{subEl}</li>
+                      <li key={el.id + " " + index}>{subEl}</li>
                     ))}
                   </ul>
                 </div>
@@ -65,7 +65,7 @@ const data = [
     description:
       "La inyección de toxina botulínica, comúnmente conocida como Botox, es un procedimiento no quirúrgico que implica la inyección de pequeñas dosis de toxina botulínica tipo A en los músculos faciales. Este tratamiento ayuda a reducir la apariencia de líneas de expresión y arrugas al relajar los músculos subyacentes.",
     benefits: [
-      <p key={0}>
+      <p>
         Reducción de <span>líneas de expresión</span> y <span>arrugas</span>
       </p>,
       "Resultados rápidos y visibles en pocos días",

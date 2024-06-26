@@ -34,7 +34,7 @@ export default function Select({
     if (parentElement.current) {
       parentElement.current.addEventListener("click", onClickMenu);
     }
-  }, []);
+  }, [parentElement, onClickMenu]);
 
   return (
     <>

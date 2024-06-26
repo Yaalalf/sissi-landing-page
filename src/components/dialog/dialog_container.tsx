@@ -38,7 +38,7 @@ export default forwardRef(function Dialog(
     if (parentElement.current) {
       parentElement.current.addEventListener("click", onClickMenu);
     }
-  }, []);
+  }, [parentElement]);
 
   useImperativeHandle(
     ref,

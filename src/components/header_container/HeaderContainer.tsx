@@ -22,7 +22,9 @@ export default forwardRef(function HeaderSection(
   const pathName = usePathname();
 
   const [isHero, setIsHero] = useState(pathName === "/");
-  const [isMobile, setIsMobile] = useState(window.screen.width < 1024);
+  const [isMobile, setIsMobile] = useState(
+    window ? window.screen.width < 1024 : false
+  );
   useEffect(() => {
     window.addEventListener("resize", () => {
       console.log("resize");
