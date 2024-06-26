@@ -1,20 +1,20 @@
 "use client";
 
-import VisibilityObserver from "@/components/VisibilityObserver/VisibilityObserver";
 import "./style/mobile.css";
 import "./style/desktop_media_query.css";
 
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { usePathname } from "next/navigation";
 import HeaderContainer from "@/components/header_container";
-import Menu from "@/components/menu";
+import AnimatedContainer from "@/components/AnimatedContainer/AnimatedContainer";
+
 import Dialog from "@/components/dialog";
 import Link from "next/link";
 
 export default function HeaderSection() {
   const [selected, setSelected] = useState("none");
-  const pathName = usePathname();
   const [isHero, setIsHero] = useState(true);
+  const [isVisible, setisVisible] = useState(false);
   const buttonRef = useRef(null);
   const dialogRef = useRef<{ close: () => void }>(null);
 
@@ -123,10 +123,40 @@ export default function HeaderSection() {
             </div>
             <nav>
               <ul className="NavList">
-                <li>
+                <li
+                  onMouseEnter={() => {
+                    setisVisible(true);
+                  }}
+                  onMouseLeave={() => {
+                    setisVisible(false);
+                  }}
+                >
                   <Link className="Link" href="/tratamientosFaciales">
                     Tratamientos Faciales
                   </Link>
+
+                  <AnimatedContainer
+                    className="SubMenuContainer"
+                    visible={isVisible}
+                    animationInit="scaleInTop"
+                    animationEnd="scaleOutTop"
+                  >
+                    <ul className="SubMenu">
+                      {dataFacialTreatmentLink.map((el) => (
+                        <li key={el.id}>
+                          <Link
+                            onClick={() => {
+                              if (dialogRef.current) dialogRef.current.close();
+                            }}
+                            className="SubLink"
+                            href={`/tratamientosFaciales#${el.id}`}
+                          >
+                            {el.title}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </AnimatedContainer>
                 </li>
                 <li>
                   <Link className="Link" href="/tratamientosFaciales">

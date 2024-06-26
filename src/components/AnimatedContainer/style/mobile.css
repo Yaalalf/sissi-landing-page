@@ -1,0 +1,15 @@
+.AnimatedContainer {
+  position: relative;
+  opacity: 0;
+  animation: slideInSmall ease-in-out forwards 500ms;
+  animation-name: none;
+}
+
+/***********************Animations************************/
+
+.AnimatedContainer.init {
+  animation-name: var(--animation-init-name);
+}
+.AnimatedContainer.end {
+  animation-name: var(--animation-end-name);
+}

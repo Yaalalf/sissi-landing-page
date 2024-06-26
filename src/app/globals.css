@@ -170,3 +170,38 @@
     opacity: 0;
   }
 }
+
+@keyframes scaleInTop {
+  from {
+    transform-origin: top center;
+    transform: scale(1, 0);
+    opacity: 0;
+  }
+  to {
+    transform-origin: top center;
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+}
+@keyframes scaleOutTop {
+  from {
+    transform-origin: top center;
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+  to {
+    transform-origin: top center;
+    transform: scale(1, 0);
+    opacity: 0;
+  }
+}
+@keyframes slideRightOutSmall {
+  from {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+}

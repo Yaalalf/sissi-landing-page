@@ -1,6 +1,8 @@
 import TitleContainer from "@/components/TitleContainer/TitleContainer";
 
 import "./style/mobile.css";
+import "./style/desktop_media_query.css";
+
 import AnimatedVisibilityObserver from "@/components/AnimatedVisibilityObserver/AnimatedVisibilityObserver";
 
 export default function FacialTreatmentSection() {
