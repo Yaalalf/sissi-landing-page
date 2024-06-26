@@ -84,6 +84,11 @@
   mask-repeat: no-repeat;
 }
 /*****************************************************************************************/
+
+.dialog_container_background:has(.NavMenu) {
+  background-color: transparent !important;
+}
+
 .NavMenu {
   inline-size: 100%;
   block-size: 100%;
@@ -96,6 +101,12 @@
   background-color: var(--primary-color-dark) !important;
 
   position: relative;
+
+  overflow: auto;
+}
+
+.NavMenu:has(nav.expanded) {
+  justify-content: flex-start;
 }
 
 .NavMenu .CloseButton {
@@ -128,6 +139,7 @@
 .NavMenu .NavList {
   inline-size: 100%;
   block-size: auto;
+
   list-style-type: none;
 
   display: flex;
@@ -139,9 +151,11 @@
 
   font-size: 18px;
 }
-
+.NavMenu nav.expanded .NavList {
+  margin-block-start: 40px;
+}
 .NavMenu .NavList .LogoContainer {
-  margin-block-end: 8px;
+  margin-block-end: 20px;
 
   display: flex;
 
@@ -213,7 +227,7 @@
   padding-inline: 28px;
   padding-block: 12px;
 
-  margin-block-start: 80px;
+  margin-block-start: 40px;
 
   display: flex;
   align-items: center;
@@ -228,16 +242,19 @@
 .NavMenu .NavList .InnerNavList {
   list-style-type: none;
 
-  padding-block: 8px;
+  padding-block: 12px;
+  padding-block-start: 20px;
 
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  gap: 8px;
+  gap: 20px;
 }
 .NavMenu .NavList li.Item .InnerNavList .Link {
   font-size: 16px;
+
+  text-align: center;
 
   color: #b6c2c6;
 }

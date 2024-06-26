@@ -2,7 +2,11 @@
   position: relative;
   opacity: 0;
   animation: slideInSmall ease-in-out forwards 500ms;
-  animation-name: none;
+}
+
+.AnimatedContainer.pending {
+  opacity: 0;
+  animation-name: var(--animation-pending-name);
 }
 
 /***********************Animations************************/

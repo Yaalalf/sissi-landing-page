@@ -4,29 +4,33 @@ import "./style/mobile.css";
 import { CSSProperties, ReactNode } from "react";
 
 export default function AnimatedContainer({
-  visible,
+  state,
   children,
   className,
   animationInit = "slideInSmall",
+  animationPending = "scalePending",
   animationEnd = "slideOutSmall",
   delay = 0,
 }: {
-  visible: boolean;
+  state: string;
   children: ReactNode;
   className?: string;
   animationInit?: string;
+  animationPending?: string;
+
   animationEnd?: string;
   delay?: number;
 }) {
   return (
     <div
-      className={`AnimatedContainer ${className || ""}  ${
-        visible ? "init" : "end"
+      className={`AnimatedContainer   ${className || ""}  ${
+        state !== "pending" ? (state == "init" ? "init" : "end") : "pending"
       }`}
       style={
         {
           animationDelay: delay + "ms",
           "--animation-init-name": animationInit,
+          "--animation-pending-name": animationPending,
           "--animation-end-name": animationEnd,
         } as CSSProperties
       }

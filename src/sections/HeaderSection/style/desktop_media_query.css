@@ -155,7 +155,7 @@
     flex-direction: column;
     align-items: center;
 
-    gap: 12px;
+    gap: 0px;
 
     background-color: var(--primary-color-dark);
     box-shadow: 0px 3px 6px black;
@@ -167,7 +167,7 @@
   .HeaderSection .SubMenu li {
     inline-size: 100%;
 
-    block-size: 48px;
+    block-size: 56px;
 
     display: flex;
     align-items: center;
@@ -176,9 +176,13 @@
 
   .HeaderSection .SubMenu li .SubLink {
     inline-size: 100%;
-    block-size: auto;
+    block-size: 100%;
 
-    padding-inline: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding-inline: 32px;
 
     color: #e8ecf1;
 
@@ -190,5 +194,9 @@
   .HeaderSection .SubMenu li .SubLink:hover {
     color: var(--primary-color-dark);
     background-color: var(--primary-color);
+  }
+
+  .HeaderSection .NavList li:nth-of-type(2) .SubMenu li:nth-of-type(1) {
+    block-size: 80px;
   }
 }

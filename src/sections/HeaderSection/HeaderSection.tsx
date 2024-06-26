@@ -14,7 +14,9 @@ import Link from "next/link";
 export default function HeaderSection() {
   const [selected, setSelected] = useState("none");
   const [isHero, setIsHero] = useState(true);
-  const [isVisible, setisVisible] = useState(false);
+  const [isFacialMenu, setIsFacialMenu] = useState("pending");
+  const [isCorporalMenu, setIsCorporalMenu] = useState("pending");
+
   const buttonRef = useRef(null);
   const dialogRef = useRef<{ close: () => void }>(null);
 
@@ -47,7 +49,7 @@ export default function HeaderSection() {
                   <span className="Icon"></span>
                 </button>
 
-                <nav>
+                <nav className={selected != "none" ? "expanded" : ""}>
                   <ul className="NavList">
                     <li>
                       <Link className="Link LogoContainer" href="/">
@@ -101,10 +103,43 @@ export default function HeaderSection() {
                       )}
                     </li>
                     <li className="Item">
-                      <Link className="Link" href="/tratamientosFaciales">
+                      <Link className="Link" href="/tratamientosCorporales">
                         Tratamientos Corporales
-                        <span className="ArrowIcon"></span>
+                        <span
+                          className={`ArrowIcon ${
+                            selected == "corporal" ? "open" : "closed"
+                          }`}
+                          onClick={(e) => {
+                            e.preventDefault();
+                            e.stopPropagation();
+
+                            if (selected == "corporal") {
+                              setSelected("none");
+                            } else {
+                              setSelected("corporal");
+                            }
+                          }}
+                        ></span>
                       </Link>
+
+                      {selected == "corporal" && (
+                        <ul className="InnerNavList">
+                          {dataBodyTreatmentLink.map((el) => (
+                            <li key={el.id}>
+                              <Link
+                                onClick={() => {
+                                  if (dialogRef.current)
+                                    dialogRef.current.close();
+                                }}
+                                className="Link"
+                                href={`/tratamientosCorporales#${el.id}`}
+                              >
+                                {el.title}
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
+                      )}
                     </li>
                     <li className="ItemCite">Agendar una Cita</li>
                   </ul>
@@ -125,10 +160,10 @@ export default function HeaderSection() {
               <ul className="NavList">
                 <li
                   onMouseEnter={() => {
-                    setisVisible(true);
+                    setIsFacialMenu("init");
                   }}
                   onMouseLeave={() => {
-                    setisVisible(false);
+                    setIsFacialMenu("end");
                   }}
                 >
                   <Link className="Link" href="/tratamientosFaciales">
@@ -137,7 +172,7 @@ export default function HeaderSection() {
 
                   <AnimatedContainer
                     className="SubMenuContainer"
-                    visible={isVisible}
+                    state={isFacialMenu}
                     animationInit="scaleInTop"
                     animationEnd="scaleOutTop"
                   >
@@ -145,9 +180,6 @@ export default function HeaderSection() {
                       {dataFacialTreatmentLink.map((el) => (
                         <li key={el.id}>
                           <Link
-                            onClick={() => {
-                              if (dialogRef.current) dialogRef.current.close();
-                            }}
                             className="SubLink"
                             href={`/tratamientosFaciales#${el.id}`}
                           >
@@ -158,10 +190,37 @@ export default function HeaderSection() {
                     </ul>
                   </AnimatedContainer>
                 </li>
-                <li>
-                  <Link className="Link" href="/tratamientosFaciales">
+                <li
+                  onMouseEnter={() => {
+                    setIsCorporalMenu("init");
+                  }}
+                  onMouseLeave={() => {
+                    setIsCorporalMenu("end");
+                  }}
+                >
+                  <Link className="Link" href="/tratamientosCorporales">
                     Tratamientos Corporales
                   </Link>
+
+                  <AnimatedContainer
+                    className="SubMenuContainer"
+                    state={isCorporalMenu}
+                    animationInit="scaleInTop"
+                    animationEnd="scaleOutTop"
+                  >
+                    <ul className="SubMenu">
+                      {dataBodyTreatmentLink.map((el) => (
+                        <li key={el.id}>
+                          <Link
+                            className="SubLink"
+                            href={`/tratamientosCorporales#${el.id}`}
+                          >
+                            {el.title}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </AnimatedContainer>
                 </li>
                 <li>
                   <a className="Link" href="">
@@ -213,5 +272,31 @@ const dataFacialTreatmentLink = [
   {
     id: "lifting",
     title: " Lifting con Hilos Tensores",
+  },
+];
+const dataBodyTreatmentLink = [
+  {
+    id: "drenaje",
+    title: "Drenaje Linfático y Remodelación con Maderoterapia",
+  },
+  {
+    id: "mesoterapia",
+    title: "Mesoterapia Corporal",
+  },
+  {
+    id: "radiofrecuencia",
+    title: "Radiofrecuencia Corporal",
+  },
+  {
+    id: "vacumterapia",
+    title: "Vacumterapia",
+  },
+  {
+    id: "cavitación",
+    title: "Cavitación",
+  },
+  {
+    id: "laser",
+    title: "Láser Lipolítico",
   },
 ];
