@@ -36,29 +36,3 @@
   mask-size: contain;
   mask-position: center;
 }
-.InformationTopBanner .SocialMediaList {
-  display: flex;
-  list-style-type: none;
-
-  gap: 12px;
-}
-.InformationTopBanner .SocialMediaList .Icon {
-  inline-size: 24px;
-  block-size: 24px;
-
-  display: inline-block;
-
-  background-color: #c2c9cc;
-
-  mask-image: url("/icons/faceook-logo.svg");
-  mask-repeat: no-repeat;
-  mask-size: contain;
-  mask-position: center;
-}
-.InformationTopBanner .SocialMediaList .Icon:nth-of-type(2) {
-  mask-image: url("/icons/whatsapp-logo.svg");
-}
-
-.InformationTopBanner .SocialMediaList .Icon:nth-of-type(3) {
-  mask-image: url("/icons/instagram-logo.svg");
-}

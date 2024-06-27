@@ -1,3 +1,4 @@
+import SocialMediaLinks from "../SocialMediaLinks/SocialMediaLinks";
 import "./style/mobile.css";
 
 export default function InformationTopBanner() {
@@ -6,11 +7,7 @@ export default function InformationTopBanner() {
       <p className="Phone">
         <span className="Icon"></span>+34 967 740 850
       </p>
-      <ul className="SocialMediaList">
-        <li className="Icon"></li>
-        <li className="Icon"></li>
-        <li className="Icon"></li>
-      </ul>
+      <SocialMediaLinks />
     </div>
   );
 }

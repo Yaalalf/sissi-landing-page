@@ -2,6 +2,7 @@ import TitleContainer from "@/components/TitleContainer/TitleContainer";
 import AnimatedVisibilityObserver from "@/components/AnimatedVisibilityObserver/AnimatedVisibilityObserver";
 import "./style/mobile.css";
 import "./style/desktop_media_query.css";
+import "./style/mobile_media_query.css";
 
 export default function IndividualSection() {
   return (

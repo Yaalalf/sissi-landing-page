@@ -1,8 +1,94 @@
 .FooterSection {
   inline-size: 100%;
-  block-size: 400px;
+  block-size: auto;
 
-  background-color: var(--primary-color);
+  padding-block-start: 40px;
+  padding-block-end: 40px;
+
+  padding-inline: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: var(--primary-color-dark);
 
   box-shadow: 0px -3px 6px rgba(0, 0, 0, 0.244);
+}
+.FooterSection .LogoContainer {
+  inline-size: 320px;
+  block-size: auto;
+
+  margin-block-end: 20px;
+}
+.FooterSection .LogoContainer .Logo {
+  inline-size: 100%;
+  block-size: 200px;
+
+  background-color: var(--primary-color);
+  mask-image: url("/icons/marca-logo.svg");
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-position: center;
+}
+
+.FooterSection .Slogan {
+  color: white;
+  text-align: center;
+  margin-block-end: 40px;
+}
+
+.FooterSection .InfoContainer {
+  inline-size: 100%;
+
+  margin-block-end: 40px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 12px;
+}
+
+.FooterSection .Info {
+  inline-size: 100%;
+  max-inline-size: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+
+  gap: 4px;
+
+  text-align: center;
+
+  font-size: 16px;
+  color: #e7eaeb;
+}
+.FooterSection .Info .Icon {
+  inline-size: 24px;
+  block-size: 24px;
+
+  display: inline-block;
+
+  background-color: #c2c9cc;
+
+  mask-image: url("/icons/call-icon.svg");
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-position: center;
+}
+
+.FooterSection .Phone .Icon {
+  mask-image: url("/icons/call-icon.svg");
+}
+
+.FooterSection .Address .Icon {
+  mask-image: url("/icons/location-icon.svg");
+}
+.FooterSection .Email .Icon {
+  mask-image: url("/icons/email-icon.svg");
+}
+.FooterSection .Hour .Icon {
+  mask-image: url("/icons/hour-icon.svg");
 }

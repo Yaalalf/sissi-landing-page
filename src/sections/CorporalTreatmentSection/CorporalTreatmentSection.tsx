@@ -10,14 +10,14 @@ export default function CorporalTreatmentSection() {
     <section className="CorporalTreatmentSection">
       <TitleContainer
         title="Tratamientos Corporales"
-        subtitle="Cambia tu apariencia para siempre"
+        subtitle="Ten una piel Perfecta"
       />
       <AnimatedVisibilityObserver className="P" once delay={200}>
         <p>
-          Descubre los mejores tratamientos faciales para mantener tu piel
-          saludable y radiante. Desde limpiezas profundas hasta técnicas
-          avanzadas de rejuvenecimiento, encuentra el tratamiento perfecto para
-          tus necesidades.
+          Explora los tratamientos corporales más efectivos para cuidar y
+          embellecer tu cuerpo. Desde masajes relajantes y exfoliaciones
+          revitalizantes hasta terapias de reducción de celulitis y técnicas de
+          tonificación, encuentra el tratamiento ideal para tus objetivos.
         </p>
       </AnimatedVisibilityObserver>
       <ul className="TreatmentList">
@@ -78,7 +78,7 @@ const data = [
       "Reduce la apariencia de celulitis.",
       "Relaja y mejora el bienestar general.",
     ],
-    imgUrl: "/treatment/body/",
+    imgUrl: "/treatment/body/drenaje-treatment.webp",
     iconUrl: "/icons/treatment/body/drenaje_treatment_icon.webp",
   },
 
@@ -94,7 +94,7 @@ const data = [
       "Estimula la circulación sanguínea y linfática.",
       "Promueve una apariencia más tonificada y rejuvenecida.",
     ],
-    imgUrl: "/treatment/body/",
+    imgUrl: "/treatment/body/mesoterapia-treatment.webp",
     iconUrl: "/icons/treatment/body/mesoterapia_treatment_icon.webp",
   },
 
@@ -111,7 +111,7 @@ const data = [
       "Resultados visibles sin tiempo de inactividad.",
       "Mejora el contorno corporal.",
     ],
-    imgUrl: "/treatment/body/",
+    imgUrl: "/treatment/body/radiofrecuencia-treatment.webp",
     iconUrl: "/icons/treatment/body/radio_treatment_icon.webp",
   },
   {
@@ -127,7 +127,7 @@ const data = [
       " Tonifica y reafirma la piel.",
       "Promueve una silueta más definida.",
     ],
-    imgUrl: "/treatment/body/",
+    imgUrl: "/treatment/body/vacumterapia-treatment.webp",
     iconUrl: "/icons/treatment/body/vacunterapia_treatment_icon.webp",
   },
   {
@@ -143,7 +143,7 @@ const data = [
       "No requiere cirugía ni tiempo de recuperación.",
       "Moldea y esculpe el cuerpo.",
     ],
-    imgUrl: "/treatment/body/",
+    imgUrl: "/treatment/body/cavitacion-treatment.webp",
     iconUrl: "/icons/treatment/body/cavitacion_treatment_icon.webp",
   },
   {
@@ -159,7 +159,7 @@ const data = [
       "Mínimamente invasivo con poco tiempo de recuperación.",
       "Ayuda a definir y esculpir el contorno corporal.",
     ],
-    imgUrl: "/treatment/body/",
+    imgUrl: "/treatment/body/laser-treatment.webp",
     iconUrl: "/icons/treatment/body/laser_treatment_icon.webp",
   },
 ];

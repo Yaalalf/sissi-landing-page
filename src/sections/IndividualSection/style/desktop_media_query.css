@@ -1,20 +1,11 @@
 @media (1024px <= width <= 1920px) {
   .IndividualSection {
-    inline-size: 100%;
-
     block-size: 540px;
 
     padding-block-start: 80px;
     padding-block-end: 80px;
 
-    display: flex;
     flex-direction: row;
-
-    justify-content: center;
-    align-items: center;
-    background-color: var(--secondary-color);
-
-    position: relative;
 
     overflow: hidden;
   }
@@ -23,25 +14,14 @@
     inline-size: 60%;
     block-size: 100%;
 
-    padding: 20px;
-
     padding-block-end: 120px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
+    padding-inline-end: 40px;
 
     gap: 12px;
 
-    /* border: 3px solid var(--secondary-color-dark); */
-
-    position: relative;
-    overflow: visible;
-
-    z-index: 1;
-
     order: 2;
+
+    overflow: visible;
   }
   .IndividualSection .SectionContainer .TitleContainer {
     inline-size: 100%;
@@ -49,32 +29,16 @@
   /*********************************************************************************************/
   .IndividualSection .Process {
     inline-size: auto;
-    list-style: none;
-
-    margin: 0 auto;
-    margin-block-end: 20px;
-
-    display: flex;
+    max-inline-size: 1000%;
     flex-direction: row;
 
-    gap: 12px;
-
     position: absolute;
-    bottom: -40px;
+    bottom: -60px;
     right: 20px;
     order: 3;
   }
   .IndividualSection .Process li {
     inline-size: 240px;
-    display: flex;
-
-    background-color: #e7c3a0;
-    border-radius: 10px;
-    position: relative;
-
-    overflow: hidden;
-
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.539);
   }
 
   .IndividualSection .Process .AnimatedCard:nth-of-type(1) li {
@@ -91,44 +55,12 @@
   .IndividualSection .Process li .IconContainer {
     inline-size: 60px;
     block-size: 60px;
-
-    flex-shrink: 0;
-
-    background-color: var(--primary-color);
-
-    padding: 8px;
-  }
-  .IndividualSection .Process li .Icon {
-    inline-size: 100%;
-    block-size: 100%;
-
-    display: inline-block;
-
-    background-color: var(--primary-color-dark);
-
-    mask-image: url("/analisis.png");
-    mask-repeat: no-repeat;
-    mask-position: center;
-    mask-size: contain;
   }
 
-  .IndividualSection .Process .AnimatedCard:nth-of-type(2) li .Icon {
-    mask-image: url("/aplicacion.png");
-  }
-  .IndividualSection .Process .AnimatedCard:nth-of-type(3) li .Icon {
-    mask-image: url("/rostro_listo.png");
-  }
   .IndividualSection .Process li .Text {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
     padding-inline: 8px;
-    color: var(--primary-color-dark);
-    font-size: 16px;
-    text-align: center;
 
-    font-weight: 400;
+    text-align: center;
   }
   /******************************************************************************************/
 
@@ -136,15 +68,7 @@
     inline-size: 100%;
   }
   .IndividualSection p {
-    font-size: 20px;
-    line-height: 28px;
     text-align: center;
-    color: rgb(56, 56, 62);
-  }
-
-  .IndividualSection p span {
-    font-weight: 600;
-    color: var(--primary-color-dark);
   }
 
   /*******************************************************************************************/
@@ -157,11 +81,6 @@
 
     bottom: 0px;
     left: 0px;
-
-    background-image: url("/skin_type.webp");
-    background-position: center bottom;
-    background-size: contain;
-    background-repeat: no-repeat;
   }
 
   .IndividualSection .Decoration_Icon {
@@ -170,6 +89,7 @@
 
     position: absolute;
     top: 100px;
+    left: auto;
     right: -50px;
 
     background-color: rgb(190, 190, 190);
@@ -185,11 +105,21 @@
     mix-blend-mode: soft-light;
   }
 }
+
+@media (1150px <= width <= 1920px) {
+  .IndividualSection .Process {
+    bottom: -20px;
+  }
+}
+@media (1320px <= width <= 1920px) {
+  .IndividualSection .Process {
+    bottom: 0px;
+    right: 40px;
+  }
+}
 @media (1500px <= width <= 1920px) {
   .IndividualSection .SectionContainer {
-    inline-size: 60%;
-    block-size: 100%;
-
+    inline-size: 800px;
     padding: 20px;
 
     padding-block-end: 0px;
@@ -215,16 +145,12 @@
     inline-size: auto;
     list-style: none;
 
-    margin: 0 auto;
     margin-block-end: 20px;
 
-    display: flex;
     flex-direction: row;
 
-    gap: 12px;
-
     position: relative;
-    bottom: 0px;
+    bottom: -40px;
     right: 0px;
     order: 3;
   }
