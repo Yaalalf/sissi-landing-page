@@ -111,7 +111,7 @@ export default function CatalogSection() {
               {el.price && (
                 <p className="Price">
                   {el.price.map((pricesEl) => (
-                    <span>{pricesEl}</span>
+                    <span key={pricesEl}>{pricesEl}</span>
                   ))}
                 </p>
               )}
