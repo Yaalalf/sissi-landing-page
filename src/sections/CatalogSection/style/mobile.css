@@ -1,0 +1,230 @@
+.CatalogSection {
+  block-size: auto;
+  inline-size: 100%;
+
+  padding-block-start: 100px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: var(--primary-color);
+}
+.CatalogSection .TitleContainer {
+  text-align: center;
+}
+
+.CatalogSection > .P {
+  inline-size: 80%;
+
+  margin-block-end: 20px;
+  text-align: center;
+
+  font-size: 18px;
+  color: var(--primary-color-dark);
+}
+
+.CatalogSection .CatalogContainer {
+  inline-size: 100%;
+
+  padding-inline: 12px;
+
+  padding-block: 40px;
+}
+
+.CatalogSection .CatalogContainer:nth-of-type(3) {
+  padding-block-start: 12px;
+}
+
+.CatalogSection .CatalogContainer:nth-of-type(4) {
+  background-color: #e7ebee;
+}
+
+.CatalogSection .CatalogContainer h4 {
+  font-size: 24px;
+  color: var(--primary-color-dark);
+  font-family: "Times New Roman", Times, serif;
+  margin-block-end: 12px;
+}
+
+.CatalogSection .CatalogContainer .CatalogList {
+  list-style-type: none;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.CatalogSection .CatalogContainer .CatalogList li.ListItem {
+  padding: 40px;
+  padding-inline: 20px;
+  background-color: var(--primary-color-dark);
+
+  border-radius: 10px;
+
+  position: relative;
+
+  overflow: hidden;
+
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.326);
+}
+.CatalogSection .CatalogContainer .CatalogList li.ListItem p {
+  inline-size: 80%;
+  color: #bcc1c6;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+}
+.CatalogSection .CatalogContainer .CatalogList li.ListItem .Price {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+
+.CatalogSection .CatalogContainer .CatalogList li.ListItem .Price span {
+  position: relative;
+  left: -20px;
+  top: -20px;
+  z-index: 1;
+  font-size: 20px;
+  color: var(--primary-color-dark);
+  font-weight: 600;
+}
+
+.CatalogSection .CatalogContainer .CatalogList li.ListItem .Price::before {
+  inline-size: 200px;
+  block-size: 200px;
+
+  position: absolute;
+  right: -120px;
+  bottom: -100px;
+
+  content: "";
+  display: block;
+
+  background-color: var(--secondary-color);
+
+  color: var(--primary-color-dark);
+
+  transform: rotateZ(45deg);
+
+  z-index: 0;
+}
+
+.CatalogSection .CatalogContainer .CatalogList li.ListItem:has(.Sesion) {
+  padding: 0px;
+  padding-block: 0px;
+
+  display: flex;
+  align-items: center;
+}
+.CatalogSection .CatalogContainer .CatalogList li.ListItem:has(.Sesion) p {
+  inline-size: 60%;
+  padding-inline-start: 20px;
+  padding-block: 40px;
+}
+.CatalogSection .CatalogContainer .CatalogList li.ListItem .Sesion {
+  inline-size: 40%;
+  block-size: 100%;
+
+  position: relative;
+  right: 0px;
+  bottom: 0px;
+  text-align: center;
+}
+
+.CatalogSection .CatalogContainer .CatalogList li.ListItem .Sesion::before {
+  inline-size: 100%;
+  block-size: 400px;
+
+  position: absolute;
+  right: 0px;
+  bottom: -200px;
+
+  content: "";
+  display: block;
+
+  background-color: var(--secondary-color);
+
+  color: var(--primary-color-dark);
+
+  z-index: 0;
+}
+
+.CatalogSection .CatalogContainer .CatalogList li.ListItem .Sesion span {
+  display: inline-block;
+  padding-inline: 12px;
+  font-size: 20px;
+  color: var(--primary-color-dark);
+  font-weight: 600;
+
+  position: relative;
+  z-index: 1;
+}
+
+.CatalogSection .CatalogContainer h5 {
+  margin-block-start: 24px;
+  margin-block-end: 12px;
+  font-size: 18px;
+  color: var(--primary-color-dark);
+}
+
+.CatalogSection .CombinedList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.CatalogSection .CombinedList .CombinedItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-block-end: 0px;
+
+  text-align: center;
+
+  border: 6px solid var(--primary-color-dark);
+  border-radius: 20px;
+
+  overflow: hidden;
+}
+.CatalogSection .CombinedList .CombinedItem h6 {
+  inline-size: 100%;
+
+  padding-block: 12px;
+  padding-inline: 20px;
+  margin-block-end: 20px;
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+
+  background-color: #e7ebee;
+
+  color: var(--primary-color-dark);
+}
+.CatalogSection .CombinedList .CombinedItem p {
+  padding-inline: 20px;
+  margin-block-end: 20px;
+
+  color: rgb(47, 47, 54);
+}
+.CatalogSection .CombinedList .CombinedItem p.Price {
+  inline-size: 100%;
+
+  padding: 20px;
+  margin-block-end: 0px;
+
+  background-color: var(--primary-color-dark);
+  color: var(--secondary-color);
+}
+
+.CatalogSection .CabinaContainer .CombinedList .CombinedItem > p.Price {
+  margin-block-start: 12px;
+  margin-block-end: 0px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.CatalogSection .CabinaContainer .CombinedList .CombinedItem > p {
+  margin-block: 4px;
+}

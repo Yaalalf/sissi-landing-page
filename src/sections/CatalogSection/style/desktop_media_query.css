@@ -1,0 +1,48 @@
+@media (1024px <= width < 1920px) {
+  .CatalogSection {
+    padding-block-start: 100px;
+  }
+
+  .CatalogSection > .P {
+    inline-size: 40%;
+  }
+
+  .CatalogSection .CatalogContainer {
+    padding-inline: 40px;
+  }
+
+  .CatalogSection .CatalogContainer .CatalogList {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .CatalogSection .CatalogContainer .CatalogList li.ListItem {
+    inline-size: 320px;
+    block-size: 200px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .CatalogSection .CatalogContainer .CatalogList li.ListItem .Sesion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .CatalogSection .CombinedList {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .CatalogSection .CombinedList .CombinedItem {
+    inline-size: 400px;
+    block-size: min-content;
+
+    min-inline-size: 280px;
+    min-block-size: 200px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

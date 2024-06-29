@@ -4,7 +4,6 @@ import "./style/mobile.css";
 import "./style/desktop_media_query.css";
 
 import { useRef, useState } from "react";
-import { usePathname } from "next/navigation";
 import HeaderContainer from "@/components/header_container";
 import AnimatedContainer from "@/components/AnimatedContainer/AnimatedContainer";
 
@@ -57,6 +56,7 @@ export default function HeaderSection() {
                         <div className="Text"></div>
                       </Link>
                     </li>
+
                     <li className="Item">
                       <Link
                         className="Link"
@@ -141,6 +141,19 @@ export default function HeaderSection() {
                         </ul>
                       )}
                     </li>
+
+                    <li className="Item">
+                      <Link
+                        className="Link"
+                        href="/catalogo"
+                        onClick={() => {
+                          if (dialogRef.current) dialogRef.current.close();
+                        }}
+                      >
+                        Catalogo
+                      </Link>
+                    </li>
+
                     <li className="ItemCite">Agendar una Cita</li>
                   </ul>
                 </nav>
@@ -222,6 +235,13 @@ export default function HeaderSection() {
                     </ul>
                   </AnimatedContainer>
                 </li>
+
+                <li>
+                  <Link className="Link" href="/catalogo">
+                    Catalogo
+                  </Link>
+                </li>
+
                 <li>
                   <a className="Link" href="">
                     Agendar Cita
