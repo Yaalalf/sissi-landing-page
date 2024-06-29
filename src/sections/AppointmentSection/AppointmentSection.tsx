@@ -1,3 +1,4 @@
+import Link from "next/link";
 import "./style/mobile.css";
 
 export default function AppointmentSection() {
@@ -14,6 +15,7 @@ export default function AppointmentSection() {
         </p>
 
         <a href="/#">Agenda una cita</a>
+        <Link href="catalogo"> Ver Catálogo</Link>
 
         <div className="Decoration"></div>
       </div>
