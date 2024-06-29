@@ -1,0 +1,106 @@
+@media (1024px <= width < 1920px) {
+  .FooterSection {
+    inline-size: 100%;
+    block-size: auto;
+
+    padding-block-start: 20px;
+    padding-block-end: 20px;
+
+    padding-inline: 20px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: var(--primary-color-dark);
+
+    box-shadow: 0px -3px 6px rgba(0, 0, 0, 0.244);
+
+    position: relative;
+  }
+  .FooterSection .LogoContainer {
+    inline-size: 140px;
+    block-size: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    left: -80px;
+
+    margin-block-end: 0px;
+
+    order: 3;
+  }
+  .FooterSection .LogoContainer .Logo {
+    inline-size: 140px;
+    block-size: 140px;
+
+    background-color: var(--primary-color);
+    mask-image: url("/icons/marca-logo.svg");
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    mask-position: center;
+  }
+
+  .FooterSection .Slogan {
+    order: 4;
+
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    margin-block-end: 20px;
+    margin-inline-end: 16px;
+  }
+
+  .FooterSection .InfoContainer {
+    inline-size: auto;
+
+    margin-block-end: 0px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 12px;
+  }
+
+  .FooterSection .InfoContainer br {
+    display: none;
+  }
+
+  .FooterSection .Info {
+    inline-size: 100%;
+    max-inline-size: 480px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+
+    gap: 4px;
+
+    text-align: center;
+
+    font-size: 14px;
+    color: #e7eaeb;
+  }
+  .FooterSection .Info .Icon {
+    inline-size: 18px;
+    block-size: 18px;
+
+    display: inline-block;
+  }
+
+  .FooterSection .SocialMediaList {
+    position: absolute;
+    bottom: 46px;
+    right: 46px;
+  }
+
+  .FooterSection .SocialMediaList .Icon {
+    inline-size: 20px;
+    block-size: 20px;
+  }
+}

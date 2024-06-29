@@ -18,7 +18,7 @@
   block-size: 100%;
 
   position: absolute;
-  background-image: url("/cita.jpg");
+  background-image: url("/cita_background.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -32,7 +32,9 @@
 
 .AppointmentSection .Content {
   inline-size: 90%;
-  block-size: 90%;
+  block-size: 50%;
+
+  max-inline-size: 600px;
 
   padding-block-start: 120px;
 
@@ -52,9 +54,11 @@
 }
 
 .AppointmentSection .Content p {
-  font-size: 28px;
-  padding-inline: 20px;
-
+  margin-block-end: 28px;
+  font-size: 24px;
+  font-family: "Times New Roman", Times, serif;
+  padding-inline: 10%;
+  font-weight: 600;
   text-align: center;
   color: var(--primary-color);
 }
@@ -67,15 +71,13 @@
   align-items: center;
   justify-content: center;
 
-  margin-block-start: 12px;
-
   position: relative;
 
   border: 3px solid white;
 
   border-radius: 40px;
 
-  font-size: 18px;
+  font-size: 14px;
   color: white;
   text-decoration: none;
   text-align: center;
@@ -84,11 +86,11 @@
 }
 
 .AppointmentSection .Content .Decoration {
-  inline-size: 280px;
-  block-size: 280px;
+  inline-size: 260px;
+  block-size: 220px;
 
   position: relative;
-  top: 20px;
+  top: 30px;
   left: 10px;
 
   background-image: url("/cita.webp");

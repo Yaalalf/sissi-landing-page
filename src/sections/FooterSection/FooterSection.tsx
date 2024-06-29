@@ -1,5 +1,6 @@
 import SocialMediaLinks from "@/components/SocialMediaLinks/SocialMediaLinks";
 import "./style/mobile.css";
+import "./style/desktop_media_query.css";
 
 export default function FooterSection() {
   return (

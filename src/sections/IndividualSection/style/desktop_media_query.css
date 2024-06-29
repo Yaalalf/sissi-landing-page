@@ -17,6 +17,9 @@
     padding-block-end: 120px;
     padding-inline-end: 40px;
 
+    display: flex;
+    flex-direction: column;
+
     gap: 12px;
 
     order: 2;
@@ -84,25 +87,10 @@
   }
 
   .IndividualSection .Decoration_Icon {
-    inline-size: 160px;
-    block-size: 160px;
-
     position: absolute;
     top: 100px;
     left: auto;
     right: -50px;
-
-    background-color: rgb(190, 190, 190);
-
-    mask-image: url("/botox_inyection_ilustration.png");
-
-    mask-position: center bottom;
-    mask-size: contain;
-    mask-repeat: no-repeat;
-
-    z-index: 0;
-
-    mix-blend-mode: soft-light;
   }
 }
 
@@ -124,14 +112,10 @@
 
     padding-block-end: 0px;
 
-    display: flex;
-    flex-direction: column;
     align-items: flex-end;
     justify-content: center;
 
     gap: 12px;
-
-    /* border: 3px solid var(--secondary-color-dark); */
 
     position: relative;
     overflow: visible;
@@ -153,5 +137,10 @@
     bottom: -40px;
     right: 0px;
     order: 3;
+  }
+}
+@media (1600px <= width <= 1920px) {
+  .IndividualSection {
+    justify-content: space-between;
   }
 }

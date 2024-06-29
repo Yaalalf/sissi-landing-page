@@ -1,0 +1,13 @@
+@media (500px <= width <= 1024px) {
+  .TreatmentSection .TitleSection {
+    max-inline-size: 600px;
+    text-align: center;
+  }
+
+  .TreatmentSection .TitleSection .TitleContainer {
+    inline-size: 100%;
+
+    position: relative;
+    z-index: 2;
+  }
+}

@@ -2,6 +2,7 @@ import TitleContainer from "@/components/TitleContainer/TitleContainer";
 import Link from "next/link";
 
 import "./style/mobile.css";
+import "./style/mobile_media_query.css";
 import "./style/desktop_media_query.css";
 
 export default function TreatmentSection() {
@@ -39,20 +40,6 @@ export default function TreatmentSection() {
         </div>
         <div className="Decoration"></div> <div className="LogoIcon"></div>
       </div>
-
-      {/* <div className="TreatmentContainer">
-          <p>Nuestros tratamientos faciales incluyen:</p>
-          <ul>
-            <li className="TreatmentItem">Inyección de toxina botulínica</li>
-            <li className="TreatmentItem">Rellenos con ácido hialurónico</li>
-            <li className="TreatmentItem">Peelings médicos</li>
-            <li className="TreatmentItem">Radiofrecuencia</li>
-            <li className="TreatmentItem">Microdermoabrasión</li>
-            <li className="TreatmentItem">Microdermoabrasión</li>
-            <li className="TreatmentItem">Microdermoabrasión</li>
-            <li className="TreatmentItem">Microdermoabrasión</li>
-          </ul>
-        </div> */}
     </section>
   );
 }

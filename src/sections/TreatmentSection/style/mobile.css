@@ -2,12 +2,20 @@
   inline-size: 100%;
   block-size: auto;
 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   padding-block-start: 40px;
 
   background-color: var(--primary-color);
 }
 
 .TreatmentSection .TitleSection {
+  inline-size: 100%;
+
+  max-inline-size: 400px;
   padding-inline: 20px;
 
   position: relative;
@@ -37,6 +45,65 @@
   z-index: 0;
 
   mix-blend-mode: overlay;
+}
+
+/*****************************************Treatment********************************/
+
+.TreatmentSection .TreatmentContainer {
+  overflow: hidden;
+}
+
+.TreatmentSection .TreatmentContainer::before {
+  inline-size: 50%;
+  block-size: 50%;
+
+  display: block;
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -60%;
+
+  background-color: var(--primary-color-dark);
+
+  opacity: 0.2;
+
+  transform: rotateZ(45deg);
+
+  animation: climbTwo ease-in-out 12000ms infinite;
+}
+.TreatmentSection .TreatmentContainer::after {
+  inline-size: 100%;
+  block-size: 100%;
+
+  display: block;
+  content: "";
+  position: absolute;
+  left: 60%;
+  top: 80%;
+
+  background-color: var(--primary-color-dark);
+
+  opacity: 0.1;
+
+  transform: rotateZ(45deg);
+
+  animation: climbOne ease-in-out 9000ms infinite;
+}
+.TreatmentSection .TreatmentContainer:nth-of-type(2):before {
+  left: -30%;
+  top: -60%;
+
+  background-color: var(--primary-color);
+}
+.TreatmentSection .TreatmentContainer:nth-of-type(2)::after {
+  left: -20%;
+  top: 80%;
+  background-color: var(--primary-color);
+}
+
+.TreatmentSection .TreatmentContainer .Content {
+  position: relative;
+  z-index: 5;
 }
 /*************************************Facial*************************************************/
 .TreatmentSection .FacialSection {
@@ -74,7 +141,8 @@
 .TreatmentSection .FacialSection .Content {
   inline-size: 60%;
 
-  padding: 8px;
+  padding: 0px;
+  margin-inline-start: 5%;
 
   display: flex;
   flex-direction: column;
@@ -153,7 +221,7 @@
 
   flex-shrink: 0;
   position: absolute;
-  left: 0px;
+  left: -8px;
   background-image: url("/tratamientos-corporales.webp");
 
   background-size: cover;
@@ -164,7 +232,8 @@
 .TreatmentSection .CorporalSection .Content {
   inline-size: 60%;
 
-  padding: 8px;
+  padding: 0px;
+  margin-inline-end: 5%;
 
   display: flex;
   flex-direction: column;

@@ -1,4 +1,4 @@
-@media (1024px <= width < 1920px) {
+@media (1024px <= width <= 1920px) {
   .HeroSection {
     block-size: 600px;
 
@@ -43,7 +43,7 @@
   }
 }
 
-@media (1100px < width < 1920px) {
+@media (1100px < width <= 1920px) {
   .HeroSection .Background::before {
     left: -80%;
     top: -20%;
@@ -53,7 +53,7 @@
     top: 20%;
   }
 }
-@media (1360px < width < 1920px) {
+@media (1360px < width <= 1920px) {
   .HeroSection .Background::before {
     top: -40%;
   }
@@ -61,7 +61,7 @@
     top: 40%;
   }
 }
-@media (1600px < width < 1920px) {
+@media (1600px < width <= 1920px) {
   .HeroSection .Background::before {
     top: -60%;
   }

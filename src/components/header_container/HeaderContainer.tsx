@@ -24,11 +24,11 @@ export default forwardRef(function HeaderSection(
   const [isHero, setIsHero] = useState(pathName === "/");
   const [isMobile, setIsMobile] = useState(true);
   useEffect(() => {
-    setIsMobile(window.screen.width < 1024);
+    setIsMobile(window.innerWidth < 1024);
 
     window.addEventListener("resize", () => {
       console.log("resize");
-      setIsMobile(window.screen.width < 1024);
+      setIsMobile(window.innerWidth < 1024);
     });
   }, []);
 
@@ -52,6 +52,11 @@ export default forwardRef(function HeaderSection(
             setIsHero(entry.isIntersecting);
             if (onIsHero) {
               onIsHero(entry.isIntersecting);
+            }
+          } else {
+            setIsHero(false);
+            if (onIsHero) {
+              onIsHero(false);
             }
           }
         }}

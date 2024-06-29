@@ -22,8 +22,6 @@
 
   padding: 20px;
 
-  /* border: 3px solid var(--secondary-color-dark); */
-
   position: relative;
   overflow: hidden;
 
@@ -87,17 +85,17 @@
 
   background-color: var(--primary-color-dark);
 
-  mask-image: url("/analisis.png");
+  mask-image: url("/analisis.webp");
   mask-repeat: no-repeat;
   mask-position: center;
   mask-size: contain;
 }
 
 .IndividualSection .Process .AnimatedCard:nth-of-type(2) li .Icon {
-  mask-image: url("/aplicacion.png");
+  mask-image: url("/aplicacion.webp");
 }
 .IndividualSection .Process .AnimatedCard:nth-of-type(3) li .Icon {
-  mask-image: url("/rostro_listo.png");
+  mask-image: url("/rostro_listo.webp");
 }
 .IndividualSection .Process li .Text {
   display: flex;
@@ -139,24 +137,6 @@
   background-repeat: no-repeat;
 }
 
-.IndividualSection
-  .DecorationPositioned
-  .DecorationContainer
-  .Decoration:nth-of-type(2) {
-  inline-size: 100%;
-  block-size: 20px;
-
-  background-color: var(--primary-color-dark);
-
-  background-image: none;
-  mask-image: url("/trival_first.svg");
-  mask-position: center bottom;
-  mask-size: contain;
-  mask-repeat: repeat-x;
-
-  position: absolute;
-  bottom: -10px;
-}
 .IndividualSection .Decoration_Icon {
   inline-size: 160px;
   block-size: 160px;
@@ -167,7 +147,7 @@
 
   background-color: rgb(190, 190, 190);
 
-  mask-image: url("/botox_inyection_ilustration.png");
+  mask-image: url("/botox_inyection_ilustration.webp");
 
   mask-position: center bottom;
   mask-size: contain;
