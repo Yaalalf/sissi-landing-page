@@ -223,20 +223,34 @@
   transform: rotateZ(-90deg);
 }
 .NavMenu .NavList li.ItemCite {
-  inline-size: 220px;
-  padding-inline: 28px;
-  padding-block: 12px;
-
   margin-block-start: 40px;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
-  border-radius: 40px;
+  font-weight: 500;
+}
+
+.NavMenu .NavList li.ItemCite .Link {
+  inline-size: 220px;
+  block-size: 60px;
+
+  padding-inline: 28px;
+  padding-block: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 18px;
+
+  text-decoration: none;
 
   background-color: var(--primary-color);
   color: var(--primary-color-dark);
+
+  border-radius: 40px;
 }
 
 .NavMenu .NavList .InnerNavList {

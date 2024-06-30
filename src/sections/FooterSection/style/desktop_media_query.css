@@ -28,7 +28,7 @@
     justify-content: center;
 
     position: relative;
-    left: -80px;
+    left: 0px;
 
     margin-block-end: 0px;
 
@@ -46,7 +46,7 @@
   }
 
   .FooterSection .Slogan {
-    order: 4;
+    order: 2;
 
     color: white;
     text-align: center;
@@ -61,7 +61,7 @@
     margin-block-end: 0px;
 
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
 
     gap: 12px;
@@ -69,6 +69,23 @@
 
   .FooterSection .InfoContainer br {
     display: none;
+  }
+  .FooterSection .InfoContainer .InfoContent {
+    inline-size: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 12px;
+  }
+
+  .FooterSection .LocationFrame {
+    inline-size: 200px;
+    block-size: 132px;
+    border-radius: 20px;
+
+    margin-block-end: 0px;
   }
 
   .FooterSection .Info {
@@ -96,7 +113,7 @@
   .FooterSection .SocialMediaList {
     position: absolute;
     bottom: 46px;
-    right: 46px;
+    right: 360px;
   }
 
   .FooterSection .SocialMediaList .Icon {

@@ -179,7 +179,7 @@
   inline-size: 180px;
   block-size: auto;
 
-  margin-block-start: 12px;
+  margin-block-start: 20px;
 
   padding-inline: 24px;
   padding-block: 8px;
@@ -190,13 +190,19 @@
 
   border-radius: 40px;
 
-  font-size: 16px;
+  font-size: 14px;
   color: rgb(106, 158, 180);
   text-decoration: none;
   text-align: center;
-  font-weight: 800;
+  font-weight: 600;
   text-transform: uppercase;
 }
+
+.TreatmentSection .FacialSection .Content a:hover {
+  background-color: #d4dce6;
+  color: var(--primary-color-dark);
+}
+
 /*****************************Corporal***************************************/
 
 .TreatmentSection .CorporalSection {
@@ -271,21 +277,26 @@
   inline-size: 180px;
   block-size: auto;
 
-  margin-block-start: 12px;
+  margin-block-start: 20px;
 
   padding-inline: 24px;
   padding-block: 8px;
 
   position: relative;
 
-  border: 3px solid rgb(44, 92, 112);
+  border: 3px solid var(--primary-color-dark);
 
   border-radius: 40px;
 
-  font-size: 16px;
-  color: #1c5b7f;
+  font-size: 14px;
+  color: var(--primary-color-dark);
   text-decoration: none;
   text-align: center;
   font-weight: 800;
   text-transform: uppercase;
+}
+
+.TreatmentSection .CorporalSection .Content a:hover {
+  background-color: #d4dce6;
+  color: var(--primary-color-dark);
 }

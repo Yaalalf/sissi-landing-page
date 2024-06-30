@@ -84,11 +84,22 @@
   text-transform: uppercase;
 }
 
+.AppointmentSection .Content a:hover {
+  background-color: #e3e4eb;
+  color: var(--primary-color-dark);
+}
+
 .AppointmentSection .Content a:nth-of-type(2) {
   margin-block-start: 12px;
-  border: 3px solid white;
-  color: white;
+  color: var(--primary-color);
+  border: 3px solid var(--primary-color);
+
   background-color: transparent;
+}
+
+.AppointmentSection .Content a:nth-of-type(2):hover {
+  border-color: #f5f1f1;
+  color: #f5f1f1;
 }
 
 .AppointmentSection .Content .Decoration {

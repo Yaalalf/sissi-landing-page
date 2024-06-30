@@ -1,0 +1,63 @@
+.CookiesMenu {
+  position: fixed !important;
+  top: auto;
+  right: auto;
+  bottom: 0px;
+  left: 0px;
+  z-index: 1000000;
+}
+
+.CookiesMenuContainer {
+  inline-size: 100vw;
+  block-size: auto;
+
+  padding: 40px;
+  padding-block: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 12px;
+  background-color: #e0e0e7;
+  box-shadow: 0px -3px 6px rgba(0, 0, 0, 0.249);
+}
+
+.CookiesMenu p {
+  font-size: 18px;
+  color: var(--primary-color-dark);
+  text-align: center;
+}
+.CookiesMenu .Decoration {
+  inline-size: 100px;
+  block-size: 100px;
+
+  background-color: var(--primary-color-dark);
+
+  mask-image: url("/cookie_icon.webp");
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-position: center;
+}
+.CookiesMenu button {
+  inline-size: 180px;
+  block-size: 60px;
+
+  background-color: var(--primary-color-dark);
+  color: var(--primary-color);
+
+  outline: none;
+  border: none;
+
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+
+  border-radius: 40px;
+}
+
+.CookiesMenu button:hover {
+  background-color: var(--primary-color);
+  color: var(--primary-color-dark);
+  cursor: pointer;
+}

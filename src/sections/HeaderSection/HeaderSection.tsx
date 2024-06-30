@@ -154,7 +154,17 @@ export default function HeaderSection() {
                       </Link>
                     </li>
 
-                    <li className="ItemCite">Agendar una Cita</li>
+                    <li className="ItemCite">
+                      <a
+                        className="Link"
+                        href="/#"
+                        onClick={() => {
+                          if (dialogRef.current) dialogRef.current.close();
+                        }}
+                      >
+                        Agendar una Cita
+                      </a>
+                    </li>
                   </ul>
                 </nav>
               </Dialog>

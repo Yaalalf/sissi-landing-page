@@ -92,3 +92,11 @@
 .FooterSection .Hour .Icon {
   mask-image: url("/icons/hour-icon.svg");
 }
+
+.FooterSection .LocationFrame {
+  inline-size: 100%;
+  border-radius: 20px;
+
+  margin-block-start: 12px;
+  margin-block-end: 40px;
+}

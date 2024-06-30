@@ -13,13 +13,7 @@ export default function HeroSection() {
           Tratamientos de <span>estética facial</span> y{" "}
           <span>estética corporal</span> no invasivos.
         </h2>
-        <a href="/#">
-          Agenda una Cita
-          {/* <div className="DecoratorContainer">
-            <div className="Decorator"></div>
-            <div className="Decorator"></div>
-          </div> */}
-        </a>
+        <a href="/#">Agenda una Cita</a>
       </div>
 
       <SimpleCarrousel />

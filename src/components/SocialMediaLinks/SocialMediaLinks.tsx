@@ -3,9 +3,15 @@ import "./style/mobile.css";
 export default function SocialMediaLinks() {
   return (
     <ul className="SocialMediaList">
-      <li className="Icon"></li>
-      <li className="Icon"></li>
-      <li className="Icon"></li>
+      <li>
+        <a className="Icon" href="/#"></a>
+      </li>
+      <li>
+        <a className="Icon" href="/#"></a>
+      </li>
+      <li>
+        <a className="Icon" href="/#"></a>
+      </li>
     </ul>
   );
 }
