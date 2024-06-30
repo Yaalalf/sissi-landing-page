@@ -23,6 +23,9 @@
   font-size: 18px;
   color: var(--primary-color-dark);
 }
+.FacialTreatmentSection span {
+  font-weight: 600;
+}
 
 .FacialTreatmentSection .TreatmentList {
   inline-size: 100%;

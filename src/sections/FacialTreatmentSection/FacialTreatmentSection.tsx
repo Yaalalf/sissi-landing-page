@@ -14,10 +14,10 @@ export default function FacialTreatmentSection() {
       />
       <AnimatedVisibilityObserver className="P" once delay={200}>
         <p>
-          Descubre los mejores tratamientos faciales para mantener tu piel
-          saludable y radiante. Desde limpiezas profundas hasta técnicas
-          avanzadas de rejuvenecimiento, encuentra el tratamiento perfecto para
-          tus necesidades.
+          Descubre los mejores <span> tratamientos faciales</span> para mantener
+          tu piel saludable y radiante. Desde <span> limpiezas profundas</span>{" "}
+          hasta técnicas avanzadas de rejuvenecimiento, encuentra el{" "}
+          <span>tratamiento perfecto</span> para tus necesidades.
         </p>
       </AnimatedVisibilityObserver>
       <ul className="TreatmentList">
@@ -66,15 +66,30 @@ const data = [
   {
     id: "botox",
     title: "Inyección de Toxina Botulínica (Botox)",
-    description:
-      "La inyección de toxina botulínica, comúnmente conocida como Botox, es un procedimiento no quirúrgico que implica la inyección de pequeñas dosis de toxina botulínica tipo A en los músculos faciales. Este tratamiento ayuda a reducir la apariencia de líneas de expresión y arrugas al relajar los músculos subyacentes.",
+    description: (
+      <>
+        La inyección de <span>toxina botulínica</span>, comúnmente conocida como
+        Botox, es un procedimiento no quirúrgico que implica la inyección de
+        pequeñas dosis de toxina botulínica tipo A en los{" "}
+        <span>músculos faciales</span>. Este tratamiento ayuda a{" "}
+        <span>reducir la apariencia</span> de líneas de expresión y arrugas al
+        relajar los músculos subyacentes.
+      </>
+    ),
     benefits: [
       <p key={0}>
         Reducción de <span>líneas de expresión</span> y <span>arrugas</span>
       </p>,
-      "Resultados rápidos y visibles en pocos días",
-      "Procedimiento mínimamente invasivo con poco tiempo de recuperación",
-      "Prevención de nuevas arrugas y líneas finas",
+      <p key={1}>
+        <span>Resultados rápidos</span> y visibles en pocos días
+      </p>,
+      <p key={2}>
+        Procedimiento <span>mínimamente invasivo</span> con poco tiempo de
+        recuperación
+      </p>,
+      <p key={3}>
+        Prevención de <span>nuevas arrugas</span> y <span>líneas finas</span>
+      </p>,
     ],
     imgUrl: "/treatment/facial/botox_treatment.webp",
     iconUrl: "/icons/treatment/facial/botox_treatment_icon.webp",
@@ -84,14 +99,28 @@ const data = [
     id: "rellenos",
 
     title: "Rellenos con Ácido Hialurónico",
-    description:
-      "Los rellenos dérmicos con ácido hialurónico son inyecciones que aportan volumen y firmeza a la piel. El ácido hialurónico es una sustancia natural que retiene agua, lo que proporciona hidratación y volumen a la piel.",
+    description: (
+      <>
+        Los <span>rellenos dérmicos</span> con ácido hialurónico son inyecciones
+        que aportan
+        <span>volumen</span> y <span>firmeza</span> a la piel. El ácido
+        hialurónico es una sustancia natural que retiene agua, lo que
+        proporciona hidratación y volumen a la piel.
+      </>
+    ),
     benefits: [
-      "Rellena arrugas y líneas finas.",
-      "Añade volumen a áreas como labios, pómulos y mandíbula.",
-      "Mejora la textura y apariencia de la piel.",
-      "Resultados inmediatos y naturales.",
-      "Hidrata profundamente la piel.",
+      <p key={0}>
+        Rellena <span>arrugas</span> y <span>líneas finas.</span>
+      </p>,
+      <p key={1}>
+        Añade <span>volumen</span> a áreas como labios, pómulos y mandíbula.
+      </p>,
+      <p key={2}>
+        Resultados <span>inmediatos</span> y <span>naturales</span>.
+      </p>,
+      <p key={3}>
+        Hidrata <span>profundamente la piel</span>.
+      </p>,
     ],
     imgUrl: "/treatment/facial/relleno_treatment.webp",
     iconUrl: "/icons/treatment/facial/relleno_treatment_icon.webp",
@@ -101,13 +130,28 @@ const data = [
     id: "peelings",
 
     title: "Peelings Médicos Faciales",
-    description:
-      "El peeling médico facial es un tratamiento que utiliza soluciones químicas para exfoliar y eliminar las capas superficiales de la piel, promoviendo así la regeneración de nuevas células cutáneas.",
+    description: (
+      <>
+        El peeling médico facial es un tratamiento que utiliza{" "}
+        <span>soluciones químicas</span> para exfoliar y{" "}
+        <span>eliminar las capas superficiales</span> de la piel, promoviendo
+        así la regeneración de nuevas células cutáneas.
+      </>
+    ),
     benefits: [
-      "Mejora la textura y tono de la piel.",
-      "Reduce manchas, cicatrices y arrugas superficiales.",
-      "Estimula la producción de colágeno.",
-      "Proporciona una piel más luminosa y rejuvenecida.",
+      <p key={0}>
+        Mejora la <span>textura</span> y <span>tono de la piel</span>.
+      </p>,
+      <p key={1}>
+        <span>Reduce</span> manchas, cicatrices y arrugas superficiales.
+      </p>,
+      <p key={2}>
+        Estimula la <span>producción de colágeno</span>.
+      </p>,
+      <p key={3}>
+        Proporciona una piel más <span>luminosa</span> y{" "}
+        <span>rejuvenecida</span>.
+      </p>,
     ],
     imgUrl: "/treatment/facial/peeling_treatment.webp",
     iconUrl: "/icons/treatment/facial/peeling_treatment_icon.webp",
@@ -116,13 +160,27 @@ const data = [
     id: "radiofrecuencia",
 
     title: "Radiofrecuencia Facial",
-    description:
-      "La radiofrecuencia facial es un tratamiento no invasivo que utiliza ondas de radiofrecuencia para calentar las capas profundas de la piel, estimulando la producción de colágeno y elastina.",
+    description: (
+      <>
+        La radiofrecuencia facial es un <span>tratamiento no invasivo</span> que
+        utiliza ondas de radiofrecuencia para calentar las{" "}
+        <span>capas profundas</span> de la piel, estimulando la producción de
+        colágeno y elastina.
+      </>
+    ),
     benefits: [
-      "Mejora la firmeza y elasticidad de la piel.",
-      "Reduce arrugas y flacidez.",
-      "Resultados visibles sin tiempo de inactividad.",
-      "Proporciona un efecto lifting natural.",
+      <p key={0}>
+        Mejora la <span>firmeza </span> y <span>elasticidad </span> de la piel.
+      </p>,
+      <p key={1}>
+        Reduce <span>arrugas</span> y <span>flacidez</span>.
+      </p>,
+      <p key={2}>
+        Resultados visibles sin <span>tiempo de inactividad</span>.
+      </p>,
+      <p key={3}>
+        Proporciona un <span>efecto lifting</span> natural.
+      </p>,
     ],
     imgUrl: "/treatment/facial/radiofrecuencia-treatment.webp",
     iconUrl: "/icons/treatment/facial/radiofrecuencia_treatment_icon.webp",
@@ -131,13 +189,27 @@ const data = [
     id: "microdermoabrasión",
 
     title: "Microdermoabrasión Facial",
-    description:
-      "La microdermoabrasión facial es un procedimiento de exfoliación mecánica que utiliza cristales finos o una punta de diamante para eliminar las células muertas de la piel.",
+    description: (
+      <>
+        La microdermoabrasión facial es un{" "}
+        <span>procedimiento de exfoliación</span> mecánica que utiliza{" "}
+        <span>cristales finos</span> o una punta de diamante para eliminar las
+        <span>células muertas</span> de la piel.
+      </>
+    ),
     benefits: [
-      "Suaviza y rejuvenece la piel.",
-      "Reduce cicatrices, manchas y líneas finas.",
-      "Estimula la regeneración celular.",
-      "Mejora la absorción de productos tópicos.",
+      <p key={0}>
+        <span>Suaviza </span> y <span>rejuvenece la piel </span>.
+      </p>,
+      <p key={1}>
+        <span>Reduce</span> cicatrices, manchas y líneas finas.
+      </p>,
+      <p key={2}>
+        Estimula la <span>regeneración celular</span>.
+      </p>,
+      <p key={3}>
+        Mejora la <span>absorción</span> de productos tópicos.
+      </p>,
     ],
     imgUrl: "/treatment/facial/microdermo-treatment.webp",
     iconUrl: "/icons/treatment/facial/microdermo_treatment_icon.webp",
@@ -146,13 +218,27 @@ const data = [
     id: "mesoterapia",
 
     title: "Mesoterapia Facial y Capilar",
-    description:
-      "La mesoterapia es un tratamiento que consiste en microinyecciones de vitaminas, minerales, aminoácidos y otros nutrientes directamente en la piel o el cuero cabelludo.",
+    description: (
+      <>
+        La mesoterapia es un tratamiento que consiste en{" "}
+        <span>microinyecciones</span> de vitaminas, minerales, aminoácidos y
+        otros nutrientes <span>directamente</span> en la piel o el cuero
+        cabelludo.
+      </>
+    ),
     benefits: [
-      "Hidrata y revitaliza la piel.",
-      "Estimula la producción de colágeno y elastina.",
-      "Mejora la calidad y crecimiento del cabello.",
-      "Proporciona una piel más luminosa y saludable.",
+      <p key={0}>
+        <span>Hidrata </span> y <span>revitaliza la piel </span>.
+      </p>,
+      <p key={1}>
+        <span>Estimula</span> la producción de colágeno y elastina.
+      </p>,
+      <p key={2}>
+        Mejora la <span>calidad</span> y <span>crecimiento</span> del cabello.
+      </p>,
+      <p key={3}>
+        Proporciona una piel más <span>luminosa</span> y <span>saludable</span>.
+      </p>,
     ],
     imgUrl: "/treatment/facial/mesoterapia-treatment.webp",
     iconUrl: "/icons/treatment/facial/mesoterapia_treatment_icon.webp",
@@ -161,13 +247,28 @@ const data = [
     id: "plasma",
 
     title: "Plasma Rico en Plaquetas (PRP)",
-    description:
-      "El tratamiento con plasma rico en plaquetas (PRP) utiliza la sangre del paciente, que se centrifuga para concentrar las plaquetas y factores de crecimiento, y se inyecta de nuevo en la piel.",
+    description: (
+      <>
+        El tratamiento con plasma rico en plaquetas (PRP) utiliza la sangre del
+        paciente, que se <span>centrifuga</span> para concentrar las plaquetas y
+        factores de crecimiento, y se <span>inyecta</span> de nuevo en la piel.
+      </>
+    ),
     benefits: [
-      "Estimula la regeneración celular y la producción de colágeno.",
-      "Mejora la textura y tono de la piel.",
-      "Acelera la cicatrización y rejuvenecimiento de la piel.",
-      "Resultados naturales y biocompatibles.",
+      <p key={0}>
+        Estimula la <span>regeneración celular </span> y la{" "}
+        <span>producción de colágeno</span>.
+      </p>,
+      <p key={1}>
+        Mejora la <span>textura</span> y <span>tono</span> de la piel.
+      </p>,
+      <p key={2}>
+        Acelera la <span>cicatrización</span> y <span>rejuvenecimiento</span> de
+        la piel.
+      </p>,
+      <p key={3}>
+        Resultados <span>naturales</span> y <span>biocompatibles</span>.
+      </p>,
     ],
     imgUrl: "/treatment/facial/plasma-tratment.webp",
     iconUrl: "/icons/treatment/facial/plasma_treatment_icon.webp",
@@ -176,13 +277,26 @@ const data = [
     id: "bioestimulación",
 
     title: "Bioestimulación Celular con Vitaminas o Estimuladores de Colágeno",
-    description:
-      "La bioestimulación celular consiste en la inyección de vitaminas, minerales y estimuladores de colágeno para mejorar la salud y apariencia de la piel.",
+    description: (
+      <>
+        La bioestimulación celular consiste en la inyección de vitaminas,
+        minerales y estimuladores de colágeno para <span>mejorar la salud</span>{" "}
+        y <span>apariencia de la piel</span>.
+      </>
+    ),
     benefits: [
-      "Revitaliza y rejuvenece la piel.",
-      "Estimula la producción de colágeno.",
-      "Mejora la firmeza y elasticidad de la piel.",
-      "Proporciona una piel más radiante y saludable.",
+      <p key={0}>
+        <span>Revitaliza</span> y <span>rejuvenece</span> la piel.
+      </p>,
+      <p key={1}>
+        <span>Estimula</span> la producción de colágeno.
+      </p>,
+      <p key={2}>
+        Mejora la <span>firmeza</span> y <span>elasticidad</span> de la piel.
+      </p>,
+      <p key={3}>
+        Proporciona una piel más <span>radiante</span> y <span>saludable</span>.
+      </p>,
     ],
     imgUrl: "/treatment/facial/bioestimulacion-traetment.webp",
     iconUrl: "/icons/treatment/facial/bioestimulacion_treatment_icon.webp",
@@ -191,13 +305,27 @@ const data = [
     id: "lifting",
 
     title: "Lifting con Hilos Tensores",
-    description:
-      "El lifting con hilos tensores es un procedimiento mínimamente invasivo que utiliza hilos biocompatibles para levantar y tensar la piel flácida.",
+    description: (
+      <>
+        El lifting con hilos tensores es un procedimiento{" "}
+        <span>mínimamente invasivo</span>
+        que utiliza <span>hilos biocompatibles</span> para levantar y tensar la
+        piel flácida.
+      </>
+    ),
     benefits: [
-      "Efecto lifting inmediato sin cirugía.",
-      "Estimula la producción de colágeno.",
-      "Mejora la firmeza y contorno facial.",
-      "Resultados duraderos con tiempo de recuperación mínimo.",
+      <p key={0}>
+        <span>Efecto lifting</span> inmediato sin cirugía.
+      </p>,
+      <p key={1}>
+        <span>Estimula</span> la producción de colágeno.
+      </p>,
+      <p key={2}>
+        Mejora la <span>firmeza</span> y <span>contorno facial</span>.
+      </p>,
+      <p key={3}>
+        <span>Resultados duraderos</span> con tiempo de recuperación mínimo.
+      </p>,
     ],
     imgUrl: "/treatment/facial/hilos-treatment.webp",
     iconUrl: "/icons/treatment/facial/lifting_treatment_icon.webp",

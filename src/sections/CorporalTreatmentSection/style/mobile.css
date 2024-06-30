@@ -24,6 +24,10 @@
   color: var(--primary-color-dark);
 }
 
+.CorporalTreatmentSection span {
+  font-weight: 600;
+}
+
 .CorporalTreatmentSection .TreatmentList {
   inline-size: 100%;
 

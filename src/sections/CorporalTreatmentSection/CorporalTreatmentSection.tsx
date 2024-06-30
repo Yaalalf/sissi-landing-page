@@ -14,10 +14,11 @@ export default function CorporalTreatmentSection() {
       />
       <AnimatedVisibilityObserver className="P" once delay={200}>
         <p>
-          Explora los tratamientos corporales más efectivos para cuidar y
-          embellecer tu cuerpo. Desde masajes relajantes y exfoliaciones
-          revitalizantes hasta terapias de reducción de celulitis y técnicas de
-          tonificación, encuentra el tratamiento ideal para tus objetivos.
+          Explora los <span>tratamientos corporales</span> más efectivos para
+          cuidar y embellecer tu cuerpo. Desde <span>masajes relajantes</span> y
+          <span> exfoliaciones revitalizantes</span> hasta terapias de reducción
+          de celulitis y técnicas de tonificación, encuentra el{" "}
+          <span>tratamiento ideal</span> para tus objetivos.
         </p>
       </AnimatedVisibilityObserver>
       <ul className="TreatmentList">
@@ -66,17 +67,32 @@ const data = [
   {
     id: "drenaje",
     title: "Drenaje Linfático y Remodelación con Maderoterapia",
-    description:
-      "El drenaje linfático es una técnica de masaje suave que ayuda a estimular el sistema linfático, promoviendo la eliminación de toxinas y líquidos retenidos. La maderoterapia es una técnica de masaje que utiliza herramientas de madera especialmente diseñadas para remodelar y tonificar el cuerpo.",
+    description: (
+      <>
+        El drenaje linfático es una <span>técnica de masaje suave</span> que
+        ayuda a estimular el sistema linfático, promoviendo la eliminación de
+        toxinas y líquidos retenidos. La <span>maderoterapia</span> es una
+        técnica de masaje que utiliza herramientas de madera especialmente
+        diseñadas para remodelar y tonificar el cuerpo.
+      </>
+    ),
     benefits: [
       <p key={0}>
         Reduce la <span>retención de líquidos</span> y mejora la
         <span> circulación.</span>
       </p>,
-      "Ayuda a eliminar toxinas del cuerpo.",
-      "Tonifica y reafirma la piel.",
-      "Reduce la apariencia de celulitis.",
-      "Relaja y mejora el bienestar general.",
+      <p key={1}>
+        Ayuda a eliminar <span>toxinas del cuerpo</span>.
+      </p>,
+      <p key={2}>
+        <span>Tonifica</span> y <span>reafirma</span> la piel.
+      </p>,
+      <p key={3}>
+        <span>Reduce la apariencia</span> de celulitis.
+      </p>,
+      <p key={4}>
+        <span>Relaja</span> y <span>mejora</span> el bienestar general.
+      </p>,
     ],
     imgUrl: "/treatment/body/drenaje-treatment.webp",
     iconUrl: "/icons/treatment/body/drenaje_treatment_icon.webp",
@@ -86,13 +102,29 @@ const data = [
     id: "mesoterapia",
 
     title: "Mesoterapia Corporal",
-    description:
-      "La mesoterapia corporal consiste en la aplicación de microinyecciones de vitaminas, minerales, aminoácidos y otras sustancias activas en las capas medias de la piel para tratar la grasa localizada y mejorar la apariencia de la piel.",
+    description: (
+      <>
+        La mesoterapia corporal consiste en la aplicación de{" "}
+        <span>microinyecciones</span> de vitaminas, minerales, aminoácidos y
+        otras sustancias activas en las
+        <span>capas medias de la piel</span> para tratar la grasa localizada y
+        mejorar la apariencia de la piel.
+      </>
+    ),
     benefits: [
-      "Reduce la grasa localizada y la celulitis.",
-      "Mejora la firmeza y elasticidad de la piel.",
-      "Estimula la circulación sanguínea y linfática.",
-      "Promueve una apariencia más tonificada y rejuvenecida.",
+      <p key={0}>
+        Reduce la <span>grasa localizada</span> y <span>la celulitis</span>.
+      </p>,
+      <p key={1}>
+        Mejora la <span>firmeza</span> y <span>elasticidad</span> de la piel.
+      </p>,
+      <p key={2}>
+        Estimula la <span>circulación sanguínea</span> y <span>linfática</span>.
+      </p>,
+      <p key={3}>
+        Promueve una apariencia más <span>tonificada</span> y{" "}
+        <span>rejuvenecida</span>.
+      </p>,
     ],
     imgUrl: "/treatment/body/mesoterapia-treatment.webp",
     iconUrl: "/icons/treatment/body/mesoterapia_treatment_icon.webp",
@@ -102,14 +134,32 @@ const data = [
     id: "radiofrecuencia",
 
     title: "Radiofrecuencia Corporal",
-    description:
-      "La radiofrecuencia corporal utiliza ondas de radiofrecuencia para calentar las capas profundas de la piel, estimulando la producción de colágeno y elastina, y promoviendo la reducción de la grasa y la flacidez.",
+    description: (
+      <>
+        La radiofrecuencia corporal utiliza{" "}
+        <span>ondas de radiofrecuencia</span> para{" "}
+        <span>calentar las capas profundas de la piel</span>, estimulando la
+        producción de colágeno y elastina, y promoviendo la reducción de la
+        grasa y la flacidez.
+      </>
+    ),
     benefits: [
-      "Reduce la flacidez y mejora la firmeza de la piel.",
-      "Disminuye la apariencia de celulitis.",
-      "Estimula la producción de colágeno.",
-      "Resultados visibles sin tiempo de inactividad.",
-      "Mejora el contorno corporal.",
+      <p key={0}>
+        Reduce la <span>flacidez</span> y mejora la <span>firmeza</span> de la
+        piel.
+      </p>,
+      <p key={1}>
+        <span>Disminuye</span> la apariencia de celulitis.
+      </p>,
+      <p key={2}>
+        <span>Estimula</span> la producción de colágeno.
+      </p>,
+      <p key={3}>
+        <span>Resultados visibles</span> sin tiempo de inactividad.
+      </p>,
+      <p key={4}>
+        <span>Mejora</span> el contorno corporal.
+      </p>,
     ],
     imgUrl: "/treatment/body/radiofrecuencia-treatment.webp",
     iconUrl: "/icons/treatment/body/radio_treatment_icon.webp",
@@ -118,14 +168,29 @@ const data = [
     id: "vacumterapia",
 
     title: "Vacumterapia",
-    description:
-      "La vacumterapia es un tratamiento que utiliza succión mecánica para estimular la circulación, mejorar el drenaje linfático y reducir la apariencia de celulitis.",
+    description: (
+      <>
+        La vacumterapia es un tratamiento que utiliza{" "}
+        <span>succión mecánica</span> para estimular la circulación, mejorar el
+        drenaje linfático y reducir la apariencia de celulitis.
+      </>
+    ),
     benefits: [
-      "Mejora la circulación sanguínea y linfática.",
-      "Reduce la apariencia de celulitis.",
-      "Estimula la eliminación de toxinas.",
-      " Tonifica y reafirma la piel.",
-      "Promueve una silueta más definida.",
+      <p key={0}>
+        Mejora la <span>circulación sanguínea</span> y <span>linfática</span>.
+      </p>,
+      <p key={1}>
+        <span>Reduce</span> la apariencia de celulitis.
+      </p>,
+      <p key={2}>
+        <span>Estimula</span> la eliminación de toxinas.
+      </p>,
+      <p key={3}>
+        <span>Tonifica</span> y <span>reafirma</span> la piel.
+      </p>,
+      <p key={4}>
+        <span>Promueve</span> una silueta más definida.
+      </p>,
     ],
     imgUrl: "/treatment/body/vacumterapia-treatment.webp",
     iconUrl: "/icons/treatment/body/vacunterapia_treatment_icon.webp",
@@ -134,14 +199,31 @@ const data = [
     id: "cavitación",
 
     title: "Cavitación",
-    description:
-      "La cavitación es un tratamiento no invasivo que utiliza ultrasonidos de baja frecuencia para descomponer las células de grasa, convirtiéndolas en una sustancia líquida que el cuerpo puede eliminar fácilmente.",
+    description: (
+      <>
+        La cavitación es un <span>tratamiento no invasivo</span> que utiliza
+        <span>ultrasonidos de baja frecuencia</span> para descomponer las
+        células de grasa, convirtiéndolas en una sustancia líquida que el cuerpo
+        puede eliminar fácilmente.
+      </>
+    ),
     benefits: [
-      "Reduce la grasa localizada de manera efectiva.",
-      "Mejora la apariencia de la piel y reduce la celulitis.",
-      "Proporciona resultados rápidos y visibles.",
-      "No requiere cirugía ni tiempo de recuperación.",
-      "Moldea y esculpe el cuerpo.",
+      <p key={0}>
+        Reduce la <span>grasa localizada</span> de manera efectiva.
+      </p>,
+      <p key={1}>
+        <span>Mejora</span> la apariencia de la piel y <span>reduce</span> la
+        celulitis.
+      </p>,
+      <p key={2}>
+        Proporciona <span>resultados rápidos</span> y <span>visibles</span>.
+      </p>,
+      <p key={3}>
+        <span>No requiere cirugía</span> ni tiempo de recuperación.
+      </p>,
+      <p key={4}>
+        <span>Moldea</span> y <span>esculpe</span> el cuerpo.
+      </p>,
     ],
     imgUrl: "/treatment/body/cavitacion-treatment.webp",
     iconUrl: "/icons/treatment/body/cavitacion_treatment_icon.webp",
@@ -150,14 +232,30 @@ const data = [
     id: "laser",
 
     title: "Láser Lipolítico",
-    description:
-      "El láser lipolítico es un tratamiento que utiliza energía láser para penetrar la piel y descomponer las células de grasa, facilitando su eliminación por el cuerpo.",
+    description: (
+      <>
+        El láser lipolítico es un tratamiento que{" "}
+        <span>utiliza energía láser</span> para penetrar la piel y descomponer
+        las células de grasa, facilitando su eliminación por el cuerpo.
+      </>
+    ),
     benefits: [
-      "Reduce la grasa localizada sin cirugía.",
-      "Mejora la firmeza y apariencia de la piel.",
-      "Resultados rápidos y eficaces.",
-      "Mínimamente invasivo con poco tiempo de recuperación.",
-      "Ayuda a definir y esculpir el contorno corporal.",
+      <p key={0}>
+        Reduce la <span>grasa localizada</span> sin cirugía.
+      </p>,
+      <p key={1}>
+        Mejora la <span>firmeza</span> y <span>apariencia</span> de la piel.
+      </p>,
+      <p key={2}>
+        Resultados <span>rápidos</span> y <span>eficaces</span>.
+      </p>,
+      <p key={3}>
+        <span>Mínimamente invasivo</span> con poco tiempo de recuperación.
+      </p>,
+      <p key={4}>
+        Ayuda a <span>definir</span> y <span>esculpir</span> el contorno
+        corporal.
+      </p>,
     ],
     imgUrl: "/treatment/body/laser-treatment.webp",
     iconUrl: "/icons/treatment/body/laser_treatment_icon.webp",
