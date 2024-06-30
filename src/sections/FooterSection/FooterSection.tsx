@@ -9,10 +9,14 @@ export default function FooterSection() {
         <div className="Logo"></div>
       </div>
 
-      <p className="Slogan">
-        Tu Bienestar <br /> nuestra prioridad <br />
-        💙
-      </p>
+      <div className="SloganContainer">
+        <p className="Slogan">
+          Tu Bienestar <br /> nuestra prioridad <br />
+          💙
+        </p>
+
+        <SocialMediaLinks />
+      </div>
       <div className="InfoContainer">
         <div className="InfoContent">
           <p className="Info Phone">
@@ -42,8 +46,6 @@ export default function FooterSection() {
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
-
-      <SocialMediaLinks />
     </footer>
   );
 }
