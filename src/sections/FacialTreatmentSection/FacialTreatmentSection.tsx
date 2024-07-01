@@ -65,7 +65,7 @@ export default function FacialTreatmentSection() {
 const data = [
   {
     id: "botox",
-    title: "Inyección de Toxina Botulínica (Botox)",
+    title: "Inyección de Toxina Botulínica",
     description: (
       <>
         La inyección de <span>toxina botulínica</span>, comúnmente conocida como

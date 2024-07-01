@@ -136,7 +136,7 @@ const consultingData = [
 ];
 const facialData = [
   {
-    description: "Tratamiento antiarrugas con Botox",
+    description: "Tratamiento antiarrugas con Toxina Botulínica",
     price: "350 €",
   },
 

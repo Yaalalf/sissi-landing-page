@@ -137,7 +137,7 @@ export default function SimpleCarrousel() {
 const data = [
   {
     className: "One",
-    description1: "Tratamientos de Botox",
+    description1: "Tratamientos de Toxina Botulínica",
     description2: "Hilos Tensores Faciales",
     icon1: "/bote_icon.webp",
     icon2: "/puntos_icon.webp",
