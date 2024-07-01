@@ -182,14 +182,17 @@ export default function HeaderSection() {
             <nav>
               <ul className="NavList">
                 <li
-                  onMouseEnter={() => {
-                    setIsFacialMenu("init");
-                  }}
                   onMouseLeave={() => {
                     setIsFacialMenu("end");
                   }}
                 >
-                  <Link className="Link" href="/tratamientosFaciales">
+                  <Link
+                    onMouseEnter={() => {
+                      setIsFacialMenu("init");
+                    }}
+                    className="Link"
+                    href="/tratamientosFaciales"
+                  >
                     Tratamientos Faciales
                   </Link>
 
@@ -214,14 +217,17 @@ export default function HeaderSection() {
                   </AnimatedContainer>
                 </li>
                 <li
-                  onMouseEnter={() => {
-                    setIsCorporalMenu("init");
-                  }}
                   onMouseLeave={() => {
                     setIsCorporalMenu("end");
                   }}
                 >
-                  <Link className="Link" href="/tratamientosCorporales">
+                  <Link
+                    onMouseEnter={() => {
+                      setIsCorporalMenu("init");
+                    }}
+                    className="Link"
+                    href="/tratamientosCorporales"
+                  >
                     Tratamientos Corporales
                   </Link>
 

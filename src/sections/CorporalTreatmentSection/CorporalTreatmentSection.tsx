@@ -10,7 +10,7 @@ export default function CorporalTreatmentSection() {
     <section className="CorporalTreatmentSection">
       <TitleContainer
         title="Tratamientos Corporales"
-        subtitle="Ten una piel Perfecta"
+        subtitle="Ten una silueta perfecta"
       />
       <AnimatedVisibilityObserver className="P" once delay={200}>
         <p>
